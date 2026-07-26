@@ -125,7 +125,43 @@ const readTime = Math.max(1, Math.ceil(wordCount / 200));
   .prose ★ { color: var(--color-orange); }
   .prose ☆ { color: var(--color-border); }
 
-  /* ─── MOBILE TABLE (horizontal scroll) ─── */
+  /* ─── RACKET CARDS (image + spec table) ─── */
+  .prose h2 + p + p img,
+  .prose h3 + p img,
+  .prose p:has(+ table) img {
+    float: left;
+    width: 140px; height: auto; margin: 0 1.25rem 0.75rem 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  /* Card container: the paragraph+image+table combo */
+  .prose h2 + p:has(img) + table,
+  .prose h2 + p + p:has(img) + table {
+    display: inline-block; vertical-align: top;
+    width: calc(100% - 160px); margin-top: 0;
+  }
+  /* Clear float after each card */
+  .prose h2 ~ h2 { clear: both; }
+  .prose h2 + p:has(img)::after {
+    content: ""; display: table; clear: both;
+  }
+  [dir=rtl] .prose h2 + p img,
+  [dir=rtl] .prose h3 + p img,
+  [dir=rtl] .prose p:has(+ table) img {
+    float: right;
+    margin: 0 0 0.75rem 1.25rem;
+  }
+  @media(max-width:500px) {
+    .prose h2 + p img,
+    .prose h3 + p img,
+    .prose p:has(+ table) img {
+      float: none; display: block; width: 100%; max-width: 200px;
+      margin: 0 auto 1rem;
+    }
+    .prose h2 + p:has(img) + table {
+      width: 100%; display: block;
+    }
+  }
   @media(max-width:600px) {
     .prose { font-size: 1rem; }
     .prose table { font-size: 0.8rem; display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
