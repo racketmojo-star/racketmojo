@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" fill="none">
+  <!-- Diamond icon -->
+  <path d="M50 10 L90 50 L50 90 L10 50 Z" fill="#F6B418" stroke="#D49A0F" stroke-width="2"/>
+  <path d="M35 50 L50 35 L65 50 L50 65 Z" fill="#FFF" opacity="0.9"/>
+  
+  <!-- RacketMojo text -->
+  <text x="110" y="58" font-family="Inter, sans-serif" font-weight="800" font-size="36" fill="#1A1A2E">
+    Racket<tspan fill="#F6B418">Mojo</tspan>
+  </text>
+  
+  <!-- Tagline -->
+  <text x="110" y="82" font-family="Inter, sans-serif" font-weight="500" font-size="12" fill="#6B7280" letter-spacing="1.5">
+    AI-POWERED RACKET RECOMMENDATIONS
+  </text>
+</svg>

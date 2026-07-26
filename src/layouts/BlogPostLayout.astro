@@ -42,8 +42,12 @@ const { title, description, heroImage, pubDate, tags, author } = post.data;
   .prose li { margin-bottom: 0.4rem; }
   .prose strong { color: var(--color-orange-dark); }
   .prose hr { border: none; border-top: 1px solid var(--color-border-light); margin: 2rem 0; }
-  .prose table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.9rem; }
-  .prose th, .prose td { text-align: left; padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--color-border-light); }
-  .prose th { font-weight: 700; background: var(--color-surface); }
+  .prose table { width: 100%; border-collapse: separate; border-spacing: 0; margin: 1.5rem 0; font-size: 0.88rem; border-radius: 10px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .prose thead { background: var(--color-orange); }
+  .prose th { text-align: left; padding: 0.65rem 0.9rem; font-weight: 700; color: #fff; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.4px; border: none; }
+  .prose td { text-align: left; padding: 0.55rem 0.9rem; border-bottom: 1px solid var(--color-border-light); background: #fff; }
+  .prose tr:last-child td { border-bottom: none; }
+  .prose tr:nth-child(even) td { background: var(--color-surface); }
   [dir=rtl] .prose th, [dir=rtl] .prose td { text-align: right; }
+  .prose table { border: 1px solid var(--color-border); }
 </style>
