@@ -4,7 +4,7 @@ description: "هل وزن المضرب مهم فعلاً؟ دليل شامل ل�
 pubDate: 2026-07-26
 tags: ["دليل", "وزن", "معدات", "تقنية"]
 featured: true
-heroImage: "/images/posts/racket-weight.webp"
+heroImage: "/images/posts/racket-weight.png"
 ---
 
 امسك مضربي بادل — واحد بـ 350 جرام والآخر بـ 380 جرام. الفرق 30 جرامًا فقط، حوالي وزن بطارية صغيرة. لكن في الملعب، خلال مباراة من ساعتين، هذه الـ 30 جرامًا تغير كل شيء.

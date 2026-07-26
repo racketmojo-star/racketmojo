@@ -4,7 +4,7 @@ description: "Compare the top 5 padel rackets for beginners in 2026. Round shape
 pubDate: 2026-07-26
 tags: ["beginners", "top-picks", "racket-review", "equipment"]
 featured: true
-heroImage: "/images/posts/best-beginner-rackets.webp"
+heroImage: "/images/posts/best-beginner-rackets.png"
 ---
 
 Starting padel is exciting. But walking into a store or scrolling through online shops to pick your first racket? That part is overwhelming. Hundreds of options, jargon you don't understand yet, and prices that range from $50 to $500.

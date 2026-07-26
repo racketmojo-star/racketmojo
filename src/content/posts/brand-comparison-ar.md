@@ -4,7 +4,7 @@ description: "مقارنة بين أكبر ثلاث علامات تجارية ف
 pubDate: 2026-07-26
 tags: ["علامات-تجارية", "مقارنة", "bullpadel", "head", "babolat"]
 featured: true
-heroImage: "/images/posts/brand-comparison.webp"
+heroImage: "/images/posts/brand-comparison.png"
 ---
 
 ادخل أي نادي بادل وستجد ثلاثة أسماء تسيطر على الملاعب: Bullpadel و Head و Babolat. لكنها ليست مجرد شعارات على مضرب — كل علامة لديها فلسفة مميزة تشكل كيفية لعب مضاربها.

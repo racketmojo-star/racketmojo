@@ -4,7 +4,7 @@ description: "Formas de palas de pádel explicadas. Aprende cómo afectan la for
 pubDate: 2026-07-26
 tags: ["guía", "formas", "equipamiento", "comparativa"]
 featured: true
-heroImage: "/images/posts/racket-shapes.webp"
+heroImage: "/images/posts/racket-shapes.png"
 ---
 
 Las palas tienen tres formas. Solo recuerda esto: **la forma determina dónde está el punto dulce, y el punto dulce lo determina todo.**

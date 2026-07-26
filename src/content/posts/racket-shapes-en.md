@@ -4,7 +4,7 @@ description: "Padel racket shapes explained with clear comparisons. Learn how ro
 pubDate: 2026-07-26
 tags: ["guide", "shapes", "equipment", "comparison"]
 featured: true
-heroImage: "/images/posts/racket-shapes.webp"
+heroImage: "/images/posts/racket-shapes.png"
 ---
 
 Padel rackets come in three shapes. If you remember nothing else from this article, remember this: **the shape determines where the sweet spot lives, and the sweet spot determines everything.**

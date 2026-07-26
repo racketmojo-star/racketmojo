@@ -4,7 +4,7 @@ description: "Does racket weight actually matter? A complete guide to how padel 
 pubDate: 2026-07-26
 tags: ["guide", "weight", "equipment", "technique"]
 featured: true
-heroImage: "/images/posts/racket-weight.webp"
+heroImage: "/images/posts/racket-weight.png"
 ---
 
 Pick up two padel rackets — one at 350g, one at 380g. The difference is only 30 grams, about the weight of aAA battery. But on court, across a two-hour match, that 30g changes everything: how fast you react at the net, how hard you smash, and how your arm feels the next morning.

@@ -4,7 +4,7 @@ description: "¿Importa realmente el peso? Guía completa sobre cómo afecta el 
 pubDate: 2026-07-26
 tags: ["guía", "peso", "equipamiento", "técnica"]
 featured: true
-heroImage: "/images/posts/racket-weight.webp"
+heroImage: "/images/posts/racket-weight.png"
 ---
 
 Coge dos palas — una de 350g y otra de 380g. Solo 30 gramos de diferencia. Pero en pista, durante dos horas, esos 30g lo cambian todo.

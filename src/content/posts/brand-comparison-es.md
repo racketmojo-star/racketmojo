@@ -4,7 +4,7 @@ description: "Comparativa de las tres grandes marcas. Innovación de Bullpadel, 
 pubDate: 2026-07-26
 tags: ["marcas", "comparativa", "bullpadel", "head", "babolat"]
 featured: true
-heroImage: "/images/posts/brand-comparison.webp"
+heroImage: "/images/posts/brand-comparison.png"
 ---
 
 Entra en cualquier club de pádel y tres nombres dominan: Bullpadel, Head y Babolat. Cada marca tiene una filosofía distinta.

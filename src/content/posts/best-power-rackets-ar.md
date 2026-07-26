@@ -4,7 +4,7 @@ description: "مضارب ماسية ودمعة للاعبين المهاجمين
 pubDate: 2026-07-26
 tags: ["قوة", "متقدم", "مراجعة-مضارب", "ماسي"]
 featured: true
-heroImage: "/images/posts/best-power-rackets.webp"
+heroImage: "/images/posts/best-power-rackets.png"
 ---
 
 بعض اللاعبين يعيشون عند الشبكة. أنت تعرف من أنت — أولئك الذين لا يريدون فقط إعادة الكرة، بل يريدون إنهاء النقطة. كل كرة علوية فرصة، كل ضربة طائرة بيان.

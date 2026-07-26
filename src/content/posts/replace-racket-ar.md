@@ -4,7 +4,7 @@ description: "هل مضربك ميت؟ تعلم العلامات الخمس ال
 pubDate: 2026-07-26
 tags: ["دليل", "صيانة", "معدات", "عناية-بالمضرب"]
 featured: false
-heroImage: "/images/posts/replace-racket.webp"
+heroImage: "/images/posts/replace-racket.png"
 ---
 
 مضارب البادل لا تدوم للأبد. كل ضربة ساحقة، كل اصطدام بالجدار، كل كرة تضغط القلب أكثر. في النهاية، ينخفض الأداء حتى بدون ضرر مرئي.

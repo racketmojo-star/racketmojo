@@ -4,7 +4,7 @@ description: "¿Está muerta tu pala? Las 5 señales claras de que necesitas una
 pubDate: 2026-07-26
 tags: ["guía", "mantenimiento", "equipamiento", "cuidado-pala"]
 featured: false
-heroImage: "/images/posts/replace-racket.webp"
+heroImage: "/images/posts/replace-racket.png"
 ---
 
 Las palas no duran para siempre. Cada remate, cada impacto contra la pared, comprime el núcleo. El rendimiento baja incluso sin daños visibles.

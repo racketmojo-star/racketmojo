@@ -4,7 +4,7 @@ description: "Carbon or fiberglass? Compare padel racket surface materials — d
 pubDate: 2026-07-26
 tags: ["guide", "materials", "equipment", "comparison"]
 featured: false
-heroImage: "/images/posts/racket-materials.webp"
+heroImage: "/images/posts/racket-materials.png"
 ---
 
 Every padel racket has two key materials: the **core** (inside) and the **surface** (outside). The surface is what touches the ball, and it plays a huge role in how the racket feels. Two materials dominate: carbon and fiberglass.

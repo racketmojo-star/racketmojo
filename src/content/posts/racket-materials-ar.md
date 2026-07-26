@@ -4,7 +4,7 @@ description: "كربون أم فايبرجلاس؟ مقارنة مواد سطح 
 pubDate: 2026-07-26
 tags: ["دليل", "مواد", "معدات", "مقارنة"]
 featured: false
-heroImage: "/images/posts/racket-materials.webp"
+heroImage: "/images/posts/racket-materials.png"
 ---
 
 كل مضرب بادل له مادتان أساسيتان: القلب والسطح. السطح هو ما يلمس الكرة. مادتان تسيطران: الكربون والفايبرجلاس.

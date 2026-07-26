@@ -4,7 +4,7 @@ description: "You don't need to spend $300 to get a great padel racket. The best
 pubDate: 2026-07-26
 tags: ["budget", "value", "racket-review", "beginners"]
 featured: false
-heroImage: "/images/posts/budget-rackets.webp"
+heroImage: "/images/posts/budget-rackets.png"
 ---
 
 Here's a secret most racket manufacturers don't want you to know: **the difference between a $90 racket and a $250 racket is mostly marketing, not performance** — especially at the beginner and intermediate level.

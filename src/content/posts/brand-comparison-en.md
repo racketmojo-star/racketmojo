@@ -4,7 +4,7 @@ description: "Compare the three biggest padel racket brands. Bullpadel's innovat
 pubDate: 2026-07-26
 tags: ["brands", "comparison", "bullpadel", "head", "babolat"]
 featured: true
-heroImage: "/images/posts/brand-comparison.webp"
+heroImage: "/images/posts/brand-comparison.png"
 ---
 
 Walk into any padel club and three brand names dominate the courts: Bullpadel, Head, and Babolat. But they're not just logos on a racket — each brand has a distinct philosophy that shapes how their rackets play.

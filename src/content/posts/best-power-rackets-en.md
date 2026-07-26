@@ -4,7 +4,7 @@ description: "Diamond and teardrop rackets for aggressive players who live at th
 pubDate: 2026-07-26
 tags: ["power", "advanced", "racket-review", "diamond"]
 featured: true
-heroImage: "/images/posts/best-power-rackets.webp"
+heroImage: "/images/posts/best-power-rackets.png"
 ---
 
 Some players live at the net. You know who you are — the ones who don't just want to return the ball, you want to finish the point. Every overhead is an opportunity, every volley a statement.
