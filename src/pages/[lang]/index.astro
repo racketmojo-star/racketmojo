@@ -11,7 +11,7 @@ const { lang } = Astro.params;
 
 const allPosts = await getCollection('posts');
 const posts = allPosts
-  .filter(p => p.id.includes(`-${lang}.md`) && !p.data.draft)
+  .filter(p => (p.id.includes(`-${lang}.md`) || p.id.includes(`-${lang}.mdx`)) && !p.data.draft)
   .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
 
 const t = {

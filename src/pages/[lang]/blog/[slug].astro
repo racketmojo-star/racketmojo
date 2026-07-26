@@ -9,7 +9,7 @@ export async function getStaticPaths() {
   const paths = [];
   for (const post of posts) {
     // post.id = "first-racket-en.md" → slug="first-racket", lang="en"
-    const match = post.id.match(/^(.+)-(\w{2})\.md$/);
+    const match = post.id.match(/^(.+)-(\w{2})\.mdx?$/);
     if (match) {
       const [, slug, lang] = match;
       paths.push({ params: { lang, slug } });
@@ -23,7 +23,8 @@ const { lang, slug } = Astro.params;
 
 // Find the post matching this slug + locale
 const postId = `${slug}-${lang}.md`;
-const post = (await getCollection('posts')).find(p => p.id === postId);
+const postIdMdx = `${slug}-${lang}.mdx`;
+const post = (await getCollection('posts')).find(p => p.id === postId || p.id === postIdMdx);
 
 if (!post) {
   return Astro.redirect(`/${lang}/blog/`);

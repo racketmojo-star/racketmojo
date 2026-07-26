@@ -1,0 +1,151 @@
+---
+export interface Props {
+  name: string;
+  brand: string;
+  image: string;
+  price: string;
+  specs: {
+    shape: string;
+    weight: string;
+    core: string;
+    surface: string;
+  };
+}
+
+const { name, brand, image, price, specs } = Astro.props;
+---
+
+<div class="rc">
+  <div class="rc-img">
+    <img src={image} alt={`${brand} ${name}`} loading="lazy" />
+    <span class="rc-shape">{specs.shape}</span>
+  </div>
+  <div class="rc-body">
+    <div class="rc-head">
+      <span class="rc-brand">{brand}</span>
+      <span class="rc-price">{price}</span>
+    </div>
+    <h3 class="rc-name">{name}</h3>
+    <dl class="rc-specs">
+      <div><dt>Weight</dt><dd>{specs.weight}</dd></div>
+      <div><dt>Core</dt><dd>{specs.core}</dd></div>
+      <div><dt>Surface</dt><dd>{specs.surface}</dd></div>
+    </dl>
+  </div>
+</div>
+
+<style>
+  .rc {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid var(--color-border);
+    border-radius: 14px;
+    overflow: hidden;
+    margin: 1.75rem 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    transition: box-shadow 0.2s;
+  }
+  .rc:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+
+  /* Image side */
+  .rc-img {
+    position: relative;
+    background: #FAFBFC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    min-height: 220px;
+  }
+  .rc-img img {
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: contain;
+    transition: transform 0.2s;
+  }
+  .rc:hover .rc-img img { transform: scale(1.04); }
+  .rc-shape {
+    position: absolute;
+    top: 0.75rem; left: 0.75rem;
+    background: var(--color-orange);
+    color: #fff;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  /* Body side */
+  .rc-body { padding: 1.25rem 1.5rem 1.5rem; }
+  .rc-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.3rem;
+  }
+  .rc-brand {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-orange);
+  }
+  .rc-price {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--color-text);
+  }
+  .rc-name {
+    font-size: 1.15rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.25;
+  }
+
+  /* Specs grid */
+  .rc-specs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 1rem;
+  }
+  .rc-specs div { }
+  .rc-specs dt {
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--color-text-dim);
+    margin-bottom: 0.1rem;
+  }
+  .rc-specs dd {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--color-text);
+  }
+
+  /* Desktop: side-by-side */
+  @media(min-width: 600px) {
+    .rc {
+      flex-direction: row;
+      min-height: 260px;
+    }
+    .rc-img {
+      width: 40%;
+      min-height: auto;
+      padding: 1rem;
+    }
+    .rc-body {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  /* RTL */
+  [dir=rtl] .rc-shape {
+    left: auto; right: 0.75rem;
+  }
+</style>
