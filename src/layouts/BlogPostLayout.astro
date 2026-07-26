@@ -1,80 +1,49 @@
 ---
-// Blog post layout
 import BaseLayout from './BaseLayout.astro';
 import AppCtaCard from '../components/AppCtaCard.astro';
 import type { CollectionEntry } from 'astro:content';
-
-export interface Props {
-  post: CollectionEntry<'posts'>;
-  lang: string;
-}
-
+export interface Props { post: CollectionEntry<'posts'>; lang: string; }
 const { post, lang } = Astro.props;
 const { title, description, heroImage, pubDate, tags, author } = post.data;
 ---
 
 <BaseLayout lang={lang} title={title} description={description} image={heroImage}>
-  <article class="container" style="padding-top:3rem;padding-bottom:4rem;">
-    <!-- Header -->
-    <header style="margin-bottom:2.5rem;">
-      <!-- Tags -->
+  <article class="container" style="padding-top:2rem;padding-bottom:3rem;">
+    <header style="margin-bottom:2rem;">
       {tags.length > 0 && (
-        <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:1rem;">
+        <div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-bottom:0.75rem;">
           {tags.map(tag => (
-            <span style="background:var(--color-dark-card);color:var(--color-gold);padding:0.2rem 0.6rem;border-radius:4px;font-size:0.75rem;font-weight:600;">
-              {tag}
-            </span>
+            <span style="background:rgba(246,180,24,0.1);color:var(--color-orange-dark);padding:0.15rem 0.5rem;border-radius:4px;font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.3px;">{tag}</span>
           ))}
         </div>
       )}
-
       <h1>{title}</h1>
-
-      <div style="display:flex;gap:1.5rem;color:var(--color-text-muted);font-size:0.85rem;margin-top:0.75rem;">
-        <time datetime={pubDate.toISOString()}>
-          {pubDate.toLocaleDateString(lang === 'ar' ? 'ar-SA' : lang === 'es' ? 'es-ES' : 'en-US', {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric',
-          })}
-        </time>
+      <div style="display:flex;gap:1rem;color:var(--color-text-muted);font-size:0.8rem;margin-top:0.5rem;flex-wrap:wrap;">
+        <time datetime={pubDate.toISOString()}>{pubDate.toLocaleDateString(lang==='ar'?'ar-SA':lang==='es'?'es-ES':'en-US',{year:'numeric',month:'long',day:'numeric'})}</time>
         <span>{author}</span>
       </div>
     </header>
-
-    <!-- Hero image -->
-    {heroImage && (
-      <img
-        src={heroImage}
-        alt={title}
-        style="width:100%;border-radius:12px;margin-bottom:2.5rem;"
-      />
-    )}
-
-    <!-- Content -->
-    <div class="prose" style="max-width:var(--max-width);font-size:1.1rem;">
+    {heroImage && <img src={heroImage} alt={title} style="width:100%;border-radius:12px;margin-bottom:2rem;" />}
+    <div class="prose" style="max-width:var(--max-width);font-size:1.05rem;">
       <slot />
     </div>
-
-    <!-- App CTA — appears in every blog post -->
     <AppCtaCard />
-
-    <!-- Back to blog -->
-    <nav style="margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--color-dark-border);">
-      <a href={`/${lang}/blog/`} style="color:var(--color-gold);font-weight:600;">
-        ← Back to Blog
-      </a>
+    <nav style="margin-top:2rem;padding-top:1rem;border-top:1px solid var(--color-border-light);">
+      <a href={`/${lang}/blog/`} style="color:var(--color-orange);font-weight:600;">← Back to Blog</a>
     </nav>
   </article>
 </BaseLayout>
 
 <style>
-  .prose h2 { margin-top: 2.5rem; margin-bottom: 1rem; }
-  .prose h3 { margin-top: 2rem; margin-bottom: 0.75rem; color: var(--color-text); }
-  .prose ul, .prose ol { margin: 1rem 0 1.5rem 1.5rem; }
-  [dir='rtl'] .prose ul,
-  [dir='rtl'] .prose ol { margin: 1rem 1.5rem 1.5rem 0; }
-  .prose li { margin-bottom: 0.5rem; color: var(--color-text); }
-  .prose strong { color: var(--color-gold); }
-  .prose hr { border: none; border-top: 1px solid var(--color-dark-border); margin: 2rem 0; }
+  .prose h2 { margin-top: 2rem; margin-bottom: 0.75rem; font-size: 1.3rem; }
+  .prose h3 { margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1.1rem; }
+  .prose ul, .prose ol { margin: 0.75rem 0 1.25rem 1.5rem; }
+  [dir=rtl] .prose ul, [dir=rtl] .prose ol { margin: 0.75rem 1.5rem 1.25rem 0; }
+  .prose li { margin-bottom: 0.4rem; }
+  .prose strong { color: var(--color-orange-dark); }
+  .prose hr { border: none; border-top: 1px solid var(--color-border-light); margin: 2rem 0; }
+  .prose table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.9rem; }
+  .prose th, .prose td { text-align: left; padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--color-border-light); }
+  .prose th { font-weight: 700; background: var(--color-surface); }
+  [dir=rtl] .prose th, [dir=rtl] .prose td { text-align: right; }
 </style>

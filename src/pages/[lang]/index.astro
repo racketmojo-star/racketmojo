@@ -1,87 +1,138 @@
 ---
-// [lang]/index.astro — Homepage per locale
+// [lang]/index.astro — Homepage with latest blog posts
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
 
 export function getStaticPaths() {
-  return [
-    { params: { lang: 'en' } },
-    { params: { lang: 'ar' } },
-    { params: { lang: 'es' } },
-  ];
+  return [{ params: { lang: 'en' } }, { params: { lang: 'ar' } }, { params: { lang: 'es' } }];
 }
 
 const { lang } = Astro.params;
 
-const homeContent = {
-  en: {
-    title: 'Find Your Perfect Padel Racket',
-    subtitle: 'AI-powered racket recommendations for players who want to improve their game.',
-    cta: 'Coming Soon',
-  },
-  ar: {
-    title: 'اكتشف المضرب المثالي لك',
-    subtitle: 'توصيات ذكية لمضارب البادل لتحسين أدائك في الملعب.',
-    cta: 'قريباً',
-  },
-  es: {
-    title: 'Encuentra tu Pala de Pádel Perfecta',
-    subtitle: 'Recomendaciones impulsadas por IA para jugadores que quieren mejorar su juego.',
-    cta: 'Próximamente',
-  },
-};
+const allPosts = await getCollection('posts');
+const posts = allPosts
+  .filter(p => p.id.includes(`-${lang}.md`) && !p.data.draft)
+  .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
 
-const { title, subtitle, cta } = homeContent[lang] || homeContent.en;
+const t = {
+  en: { hero: 'Find Your Perfect Racket', sub: 'AI-powered padel racket recommendations based on how you actually play.', cta: 'Try the Racket Finder', blog: 'Latest Articles', all: 'View all articles →' },
+  ar: { hero: 'اكتشف مضربك المثالي', sub: 'توصيات ذكية لمضارب البادل بناءً على أسلوب لعبك الفعلي.', cta: 'جرّب مكتشف المضارب', blog: 'أحدث المقالات', all: 'عرض كل المقالات ←' },
+  es: { hero: 'Encuentra tu Pala Ideal', sub: 'Recomendaciones de pádel con IA basadas en cómo juegas realmente.', cta: 'Prueba el Recomendador', blog: 'Últimos Artículos', all: 'Ver todos →' },
+}[lang] || (t as any).en;
 ---
 
-<BaseLayout lang={lang} title={title} description={subtitle}>
-  <section class="container" style="text-align:center;padding-top:6rem;padding-bottom:6rem;">
-    <!-- Logo area -->
-    <div style="margin-bottom:2rem;">
-      <span style="font-size:4rem;">◆</span>
+<BaseLayout lang={lang} title={t.hero} description={t.sub}>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <span class="hero-icon">◆</span>
+      <h1>{t.hero}</h1>
+      <p class="hero-sub">{t.sub}</p>
+      <a href="https://app.racketmojo.com" class="hero-cta">{t.cta} →</a>
     </div>
-
-    <h1 style="margin-bottom:1rem;">{title}</h1>
-    <p style="font-size:1.2rem;color:var(--color-text-muted);max-width:520px;margin:0 auto 2.5rem;">
-      {subtitle}
-    </p>
-
-    <a
-      href={`/${lang}/blog/`}
-      style="display:inline-block;background:var(--color-gold);color:var(--color-dark);padding:0.8rem 2rem;border-radius:8px;font-weight:700;font-size:1.05rem;text-decoration:none;transition:background 0.2s;"
-    >
-      {cta}
-    </a>
   </section>
 
-  <!-- Featured section -->
-  <section class="container" style="padding-bottom:4rem;">
-    <h2 style="text-align:center;margin-bottom:2rem;font-size:1.5rem;">
-      Latest from the Blog
-    </h2>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;">
-      <!-- Cards will be populated dynamically; static placeholder for now -->
-      <div class="card">
-        <div class="card-body">
-          <h3 style="font-size:1.1rem;margin-bottom:0.5rem;">Coming soon</h3>
-          <p style="color:var(--color-text-muted);font-size:0.9rem;">Articles about padel rackets, techniques, and AI recommendations.</p>
-        </div>
-      </div>
+  <!-- Blog posts -->
+  <section class="container posts-section">
+    <div class="posts-header">
+      <h2>{t.blog}</h2>
+      <a href={`/${lang}/blog/`} class="view-all">{t.all}</a>
+    </div>
+    <div class="post-grid">
+      {posts.map(post => (
+        <article class="post-card">
+          <a href={`/${lang}/blog/${post.id.replace(`-${lang}.md`, '')}/`}>
+            {post.data.tags.slice(0, 2).map(tag => (
+              <span class="tag">{tag}</span>
+            ))}
+            <h3>{post.data.title}</h3>
+            <p>{post.data.description}</p>
+            <time datetime={post.data.pubDate.toISOString()}>
+              {post.data.pubDate.toLocaleDateString(lang==='ar'?'ar-SA':lang==='es'?'es-ES':'en-US',{year:'numeric',month:'short',day:'numeric'})}
+            </time>
+          </a>
+        </article>
+      ))}
     </div>
   </section>
 </BaseLayout>
 
 <style>
-  .card {
-    background: var(--color-dark-card);
-    border: 1px solid var(--color-dark-border);
-    border-radius: 12px;
+  .hero {
+    text-align: center; padding: 3rem 0 2.5rem;
+  }
+  .hero-icon { font-size: 3rem; color: var(--color-orange); display: block; margin-bottom: 0.5rem; }
+  .hero h1 { margin-bottom: 0.5rem; }
+  .hero-sub {
+    font-size: 1.05rem; color: var(--color-text-muted);
+    max-width: 480px; margin: 0 auto 1.5rem; line-height: 1.5;
+  }
+  .hero-cta {
+    display: inline-block; background: var(--color-orange); color: #fff !important;
+    padding: 0.7rem 1.8rem; border-radius: 8px; font-weight: 700; font-size: 1rem;
+    transition: background .15s;
+  }
+  .hero-cta:hover { background: var(--color-orange-dark); }
+
+  .posts-section { padding-bottom: 3rem; }
+  .posts-header {
+    display: flex; justify-content: space-between; align-items: baseline;
+    margin-bottom: 1.25rem;
+  }
+  .posts-header h2 { font-size: 1.25rem; }
+  .view-all { font-size: 0.85rem; font-weight: 600; white-space: nowrap; }
+
+  .post-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  @media(min-width: 500px) {
+    .post-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media(min-width: 768px) {
+    .post-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  .post-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-light);
+    border-radius: 10px;
+    transition: border-color .15s, box-shadow .15s;
+  }
+  .post-card:hover {
+    border-color: var(--color-orange);
+    box-shadow: 0 2px 12px rgba(246,180,24,0.08);
+  }
+  .post-card a {
+    display: block; padding: 1rem; color: inherit;
+  }
+  .tag {
+    display: inline-block;
+    background: rgba(246,180,24,0.1); color: var(--color-orange-dark);
+    padding: 0.15rem 0.5rem; border-radius: 4px;
+    font-size: 0.65rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.4px; margin-right: 0.3rem; margin-bottom: 0.4rem;
+  }
+  .post-card h3 {
+    font-size: 0.95rem; margin-bottom: 0.3rem; line-height: 1.35;
+  }
+  .post-card p {
+    font-size: 0.8rem; color: var(--color-text-muted);
+    margin-bottom: 0.5rem; line-height: 1.4;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
     overflow: hidden;
-    transition: border-color 0.2s;
   }
-  .card:hover {
-    border-color: var(--color-gold);
+  .post-card time {
+    font-size: 0.7rem; color: var(--color-text-dim);
   }
-  .card-body {
-    padding: 1.25rem;
+
+  @media(max-width: 480px) {
+    .hero { padding: 2rem 0 1.5rem; }
+    .hero-icon { font-size: 2.2rem; }
+    .hero-sub { font-size: 0.9rem; }
+    .hero-cta { padding: 0.6rem 1.4rem; font-size: 0.9rem; }
+    .post-card h3 { font-size: 0.85rem; }
+    .post-card a { padding: 0.75rem; }
   }
 </style>
