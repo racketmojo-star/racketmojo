@@ -17,6 +17,8 @@ Here are the best padel rackets that deliver genuine quality without the premium
 
 ## 1. Nox Equation 2026 — Best Overall Value
 
+![Nox Equation](/images/rackets/nox-equation.jpg)
+
 | Spec | Value |
 |------|-------|
 | Shape | Round |
@@ -30,6 +32,8 @@ The Equation proves that "budget" doesn't mean "cheap." Nox is a premium brand t
 ---
 
 ## 2. Head Evo 2026 — Best for Comfort on a Budget
+
+![Head Evo](/images/rackets/head-evo.jpg)
 
 | Spec | Value |
 |------|-------|
@@ -45,6 +49,8 @@ Head's Evo line is purpose-built for recreational players, and it shows in the c
 
 ## 3. Kuikma 560 — Best Under $70
 
+![Kuikma 560](/images/rackets/kuikma-560.jpg)
+
 | Spec | Value |
 |------|-------|
 | Shape | Round |
@@ -59,6 +65,8 @@ Decathlon's Kuikma brand has quietly become a force in budget padel equipment. T
 
 ## 4. Siux Starter 2026 — Best Lightweight Budget Pick
 
+![Siux Starter](/images/rackets/siux-starter.jpg)
+
 | Spec | Value |
 |------|-------|
 | Shape | Round |
@@ -72,6 +80,8 @@ Siux is better known for their premium rackets, but the Starter line makes their
 ---
 
 ## 5. Wilson Starter 2026 — Best from a Tennis Brand
+
+![Wilson Starter](/images/rackets/wilson-starter.jpg)
 
 | Spec | Value |
 |------|-------|

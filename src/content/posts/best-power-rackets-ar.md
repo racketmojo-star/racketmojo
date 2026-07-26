@@ -17,6 +17,8 @@ heroImage: "/images/posts/best-power-rackets.png"
 
 ## 1. Bullpadel Vertex 04 — الأفضل شاملاً للقوة
 
+![Racket](/images/rackets/bullpadel-vertex.jpg)
+
 | المواصفة | القيمة |
 |------|-------|
 | الشكل | ماسي |
@@ -32,6 +34,8 @@ Vertex 04 هو المعيار لمضارب القوة. الشكل الماسي �
 ---
 
 ## 2. Head Delta Pro 2026 — الأفضل للضربات الساحقة
+
+![Racket](/images/rackets/head-delta-pro.jpg)
 
 | المواصفة | القيمة |
 |------|-------|
@@ -49,6 +53,8 @@ Delta Pro صُنع لشيء واحد: إنهاء النقاط من فوق الش
 
 ## 3. Babolat Technical Viper 2026 — قوة دقيقة
 
+![Racket](/images/rackets/babolat-technical-viper.jpg)
+
 | المواصفة | القيمة |
 |------|-------|
 | الشكل | ماسي / دمعة هجين |
@@ -65,6 +71,8 @@ Technical Viper يأخذ نهجًا مختلفًا للقوة. شكل هجين �
 
 ## 4. Nox AT10 Genius 18K — هجوم متعدد الاستخدامات
 
+![Racket](/images/rackets/nox-at10.jpg)
+
 | المواصفة | القيمة |
 |------|-------|
 | الشكل | دمعة |
@@ -80,6 +88,8 @@ Technical Viper يأخذ نهجًا مختلفًا للقوة. شكل هجين �
 ---
 
 ## 5. Adidas Adipower CTRL 2026 — عدوانية متحكم فيها
+
+![Racket](/images/rackets/adidas-adipower-ctrl.jpg)
 
 | المواصفة | القيمة |
 |------|-------|

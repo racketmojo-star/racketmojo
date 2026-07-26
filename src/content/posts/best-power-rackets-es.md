@@ -17,6 +17,8 @@ Las cinco mejores palas de potencia de 2026.
 
 ## 1. Bullpadel Vertex 04 — La Mejor en General
 
+![Racket](/images/rackets/bullpadel-vertex.jpg)
+
 | Especificación | Valor |
 |------|-------|
 | Forma | Diamante |
@@ -32,6 +34,8 @@ La Vertex 04 es el referente. Forma de diamante, carbono 12K, y el núcleo Multi
 ---
 
 ## 2. Head Delta Pro 2026 — Mejor para Remates
+
+![Racket](/images/rackets/head-delta-pro.jpg)
 
 | Especificación | Valor |
 |------|-------|
@@ -49,6 +53,8 @@ Construida para una cosa: terminar puntos desde arriba. El núcleo más firme tr
 
 ## 3. Babolat Technical Viper 2026 — Potencia de Precisión
 
+![Racket](/images/rackets/babolat-technical-viper.jpg)
+
 | Especificación | Valor |
 |------|-------|
 | Forma | Híbrida diamante/lágrima |
@@ -65,6 +71,8 @@ Forma híbrida más cercana a la lágrima: punto dulce alto pero no extremo. El 
 
 ## 4. Nox AT10 Genius 18K — Ataque Versátil
 
+![Racket](/images/rackets/nox-at10.jpg)
+
 | Especificación | Valor |
 |------|-------|
 | Forma | Lágrima |
@@ -80,6 +88,8 @@ La pala de Agustín Tapia demuestra que no necesitas diamante puro para generar 
 ---
 
 ## 5. Adidas Adipower CTRL 2026 — Agresividad Controlada
+
+![Racket](/images/rackets/adidas-adipower-ctrl.jpg)
 
 | Especificación | Valor |
 |------|-------|

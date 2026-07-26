@@ -17,6 +17,8 @@ Here are the five best power rackets of 2026.
 
 ## 1. Bullpadel Vertex 04 — Best Overall Power Racket
 
+![Bullpadel Vertex](/images/rackets/bullpadel-vertex.jpg)
+
 | Spec | Value |
 |------|-------|
 | Shape | Diamond |
@@ -32,6 +34,8 @@ The Vertex 04 is the benchmark for power rackets. Diamond shape pushes the sweet
 ---
 
 ## 2. Head Delta Pro 2026 — Best for Smashes
+
+![Head Delta Pro](/images/rackets/head-delta-pro.jpg)
 
 | Spec | Value |
 |------|-------|
@@ -49,6 +53,8 @@ The Delta Pro is built for one thing: ending points from above the net. The Powe
 
 ## 3. Babolat Technical Viper 2026 — Best for Precision Power
 
+![Babolat Technical Viper](/images/rackets/babolat-technical-viper.jpg)
+
 | Spec | Value |
 |------|-------|
 | Shape | Diamond / Teardrop hybrid |
@@ -65,6 +71,8 @@ Babolat's Technical Viper takes a slightly different approach to power. Instead 
 
 ## 4. Nox AT10 Genius 18K 2026 — Best for Versatile Attackers
 
+![Nox AT10](/images/rackets/nox-at10.jpg)
+
 | Spec | Value |
 |------|-------|
 | Shape | Teardrop |
@@ -80,6 +88,8 @@ The Nox AT10 — Agustin Tapia's signature racket — proves you don't need a fu
 ---
 
 ## 5. Adidas Adipower CTRL 2026 — Best for Controlled Aggression
+
+![Adidas Adipower CTRL](/images/rackets/adidas-adipower-ctrl.jpg)
 
 | Spec | Value |
 |------|-------|

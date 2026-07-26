@@ -17,6 +17,8 @@ heroImage: "/images/posts/budget-rackets.png"
 
 ## 1. Nox Equation 2026 — أفضل قيمة شاملة
 
+![Racket](/images/rackets/nox-equation.jpg)
+
 | المواصفة | القيمة |
 |------|-------|
 | الشكل | دائري |
@@ -30,6 +32,8 @@ Nox Equation يثبت أن "اقتصادي" لا يعني "رخيص". Nox علا
 ---
 
 ## 2. Head Evo 2026 — الأفضل للراحة
+
+![Racket](/images/rackets/head-evo.jpg)
 
 | المواصفة | القيمة |
 |------|-------|
@@ -45,6 +49,8 @@ Nox Equation يثبت أن "اقتصادي" لا يعني "رخيص". Nox علا
 
 ## 3. Kuikma 560 — الأفضل تحت 70 دولارًا
 
+![Racket](/images/rackets/kuikma-560.jpg)
+
 | المواصفة | القيمة |
 |------|-------|
 | الشكل | دائري |
@@ -59,6 +65,8 @@ Nox Equation يثبت أن "اقتصادي" لا يعني "رخيص". Nox علا
 
 ## 4. Siux Starter 2026 — الأخف وزنًا
 
+![Racket](/images/rackets/siux-starter.jpg)
+
 | المواصفة | القيمة |
 |------|-------|
 | الشكل | دائري |
@@ -72,6 +80,8 @@ Siux معروفة بمضاربها الممتازة، لكن خط Starter يجع
 ---
 
 ## 5. Wilson Starter 2026 — من علامة تنس عريقة
+
+![Racket](/images/rackets/wilson-starter.jpg)
 
 | المواصفة | القيمة |
 |------|-------|

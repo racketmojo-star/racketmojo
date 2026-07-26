@@ -17,6 +17,8 @@ Estas son las cinco mejores palas para principiantes en 2026.
 
 ## 1. Bullpadel Flow 2026 — La Mejor en General
 
+![Racket](/images/rackets/bullpadel-flow.jpg)
+
 | Especificación | Valor |
 |------|-------|
 | Forma | Redonda |
@@ -32,6 +34,8 @@ La Bullpadel Flow es nuestra mejor elección. La forma redonda coloca el punto d
 ---
 
 ## 2. Head Flash 2026 — La Más Cómoda
+
+![Racket](/images/rackets/head-flash.jpg)
 
 | Especificación | Valor |
 |------|-------|
@@ -49,6 +53,8 @@ Si la comodidad es prioridad, Head Flash cumple. El núcleo blando reduce drást
 
 ## 3. Adidas Metalbone CTRL 2026 — Para Ambiciosos
 
+![Racket](/images/rackets/adidas-metalbone-ctrl.jpg)
+
 | Especificación | Valor |
 |------|-------|
 | Forma | Redonda / Lágrima suave |
@@ -65,6 +71,8 @@ La Metalbone CTRL está en la línea entre principiante e intermedio. Forma redo
 
 ## 4. Nox Equation 2026 — Mejor Relación Calidad-Precio
 
+![Racket](/images/rackets/nox-equation.jpg)
+
 | Especificación | Valor |
 |------|-------|
 | Forma | Redonda |
@@ -80,6 +88,8 @@ La Nox Equation demuestra que no hace falta gastar mucho. La más asequible de l
 ---
 
 ## 5. Babolat Vertuo 2026 — La Más Ligera
+
+![Racket](/images/rackets/babolat-vertuo.jpg)
 
 | Especificación | Valor |
 |------|-------|

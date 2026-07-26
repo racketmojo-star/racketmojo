@@ -17,6 +17,8 @@ heroImage: "/images/posts/best-beginner-rackets.png"
 
 ## 1. Bullpadel Flow 2026 — الأفضل شاملاً
 
+![Racket](/images/rackets/bullpadel-flow.jpg)
+
 | المواصفة | القيمة |
 |------|-------|
 | الشكل | دائري |
@@ -32,6 +34,8 @@ Bullpadel Flow هو خيارنا الأول لسبب. الشكل الدائري 
 ---
 
 ## 2. Head Flash 2026 — الأكثر راحة
+
+![Racket](/images/rackets/head-flash.jpg)
 
 | المواصفة | القيمة |
 |------|-------|
@@ -49,6 +53,8 @@ Bullpadel Flow هو خيارنا الأول لسبب. الشكل الدائري 
 
 ## 3. Adidas Metalbone CTRL 2026 — للطموحين
 
+![Racket](/images/rackets/adidas-metalbone-ctrl.jpg)
+
 | المواصفة | القيمة |
 |------|-------|
 | الشكل | دائري / دمعة خفيفة |
@@ -65,6 +71,8 @@ Bullpadel Flow هو خيارنا الأول لسبب. الشكل الدائري 
 
 ## 4. Nox Equation 2026 — أفضل قيمة
 
+![Racket](/images/rackets/nox-equation.jpg)
+
 | المواصفة | القيمة |
 |------|-------|
 | الشكل | دائري |
@@ -80,6 +88,8 @@ Nox Equation يثبت أنك لست بحاجة لدفع مبالغ كبيرة ل
 ---
 
 ## 5. Babolat Vertuo 2026 — الأخف وزنًا
+
+![Racket](/images/rackets/babolat-vertuo.jpg)
 
 | المواصفة | القيمة |
 |------|-------|

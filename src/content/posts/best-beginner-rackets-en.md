@@ -17,6 +17,8 @@ We've tested and compared the top options for 2026. Here are the five best padel
 
 ## 1. Bullpadel Flow 2026 — Best Overall
 
+![Bullpadel Flow](/images/rackets/bullpadel-flow.jpg)
+
 | Spec | Value |
 |------|-------|
 | Shape | Round |
@@ -34,6 +36,8 @@ The fiberglass surface is flexible and responsive without being punishing. You'l
 ---
 
 ## 2. Head Flash 2026 — Best for Comfort
+
+![Head Flash](/images/rackets/head-flash.jpg)
 
 | Spec | Value |
 |------|-------|
@@ -53,6 +57,8 @@ It's slightly lighter than the Flow, which makes it easier to maneuver at the ne
 
 ## 3. Adidas Metalbone CTRL 2026 — Best for Ambitious Beginners
 
+![Adidas Metalbone CTRL](/images/rackets/adidas-metalbone-ctrl.jpg)
+
 | Spec | Value |
 |------|-------|
 | Shape | Round / Mild Teardrop |
@@ -71,6 +77,8 @@ The mixed surface (fiberglass body with carbon reinforcements) gives you more du
 
 ## 4. Nox Equation 2026 — Best Value
 
+![Nox Equation](/images/rackets/nox-equation.jpg)
+
 | Spec | Value |
 |------|-------|
 | Shape | Round |
@@ -88,6 +96,8 @@ At this price point, it's also the racket you won't feel guilty about replacing 
 ---
 
 ## 5. Babolat Vertuo 2026 — Best Lightweight Option
+
+![Babolat Vertuo](/images/rackets/babolat-vertuo.jpg)
 
 | Spec | Value |
 |------|-------|

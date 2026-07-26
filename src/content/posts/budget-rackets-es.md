@@ -17,6 +17,8 @@ Las mejores palas de pádel con calidad real sin precio premium.
 
 ## 1. Nox Equation 2026 — Mejor Relación Calidad-Precio
 
+![Racket](/images/rackets/nox-equation.jpg)
+
 | Especificación | Valor |
 |------|-------|
 | Forma | Redonda |
@@ -30,6 +32,8 @@ La Equation demuestra que "económico" no es "barato." Nox fabrica una pala de i
 ---
 
 ## 2. Head Evo 2026 — Máximo Confort Económico
+
+![Racket](/images/rackets/head-evo.jpg)
 
 | Especificación | Valor |
 |------|-------|
@@ -45,6 +49,8 @@ La línea Evo está diseñada para jugadores recreativos. El núcleo blando es e
 
 ## 3. Kuikma 560 — Mejor por Menos de 70€
 
+![Racket](/images/rackets/kuikma-560.jpg)
+
 | Especificación | Valor |
 |------|-------|
 | Forma | Redonda |
@@ -59,6 +65,8 @@ Kuikma de Decathlon se ha convertido en referencia en equipo económico. La 560 
 
 ## 4. Siux Starter 2026 — La Más Ligera
 
+![Racket](/images/rackets/siux-starter.jpg)
+
 | Especificación | Valor |
 |------|-------|
 | Forma | Redonda |
@@ -72,6 +80,8 @@ La más ligera de la lista. Ideal para jugadores jóvenes o con sensibilidad en 
 ---
 
 ## 5. Wilson Starter 2026 — De Una Marca de Tenis
+
+![Racket](/images/rackets/wilson-starter.jpg)
 
 | Especificación | Valor |
 |------|-------|
