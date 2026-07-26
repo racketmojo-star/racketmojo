@@ -1,0 +1,99 @@
+---
+// Base HTML layout — wraps every page
+import '@/styles/global.css';
+
+export interface Props {
+  lang: string;
+  title: string;
+  description: string;
+  image?: string;
+}
+
+const { lang, title, description, image } = Astro.props;
+const dir = lang === 'ar' ? 'rtl' : 'ltr';
+---
+
+<!doctype html>
+<html lang={lang} dir={dir}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title} — RacketMojo</title>
+    <meta name="description" content={description} />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="RacketMojo" />
+    {image && <meta property="og:image" content={image} />}
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Arabic:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <!-- Nav -->
+    <header class="site-header">
+      <div class="container" style="display:flex;align-items:center;justify-content:space-between;padding-top:1.5rem;padding-bottom:1.5rem;">
+        <a href={`/${lang}/`} class="logo" style="display:flex;align-items:center;gap:0.5rem;font-weight:800;font-size:1.25rem;color:#fff;text-decoration:none;">
+          <span style="color:var(--color-gold);">◆</span> RacketMojo
+        </a>
+        <nav style="display:flex;gap:1.5rem;align-items:center;">
+          <a href={`/${lang}/blog/`} style="color:var(--color-text-muted);font-size:0.9rem;">Blog</a>
+          <!-- Language switcher -->
+          <div class="lang-switcher" style="display:flex;gap:0.5rem;">
+            {['en', 'ar', 'es'].map(l => (
+              <a
+                href={l === lang ? '#' : `/${l}/`}
+                style={`font-size:0.8rem;padding:0.25rem 0.5rem;border-radius:4px;text-decoration:none;${
+                  l === lang
+                    ? 'background:var(--color-gold);color:var(--color-dark);font-weight:600;'
+                    : 'color:var(--color-text-muted);'
+                }`}
+              >
+                {l.toUpperCase()}
+              </a>
+            ))}
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <main>
+      <slot />
+    </main>
+
+    <!-- Footer -->
+    <footer style="border-top:1px solid var(--color-dark-border);margin-top:4rem;padding:2rem 0;color:var(--color-text-dim);font-size:0.85rem;">
+      <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;">
+        <span>© {new Date().getFullYear()} RacketMojo</span>
+        <div style="display:flex;gap:1rem;">
+          <a href="https://instagram.com/racketmojo" style="color:var(--color-text-dim);">Instagram</a>
+          <a href="https://racketmojo.com" style="color:var(--color-text-dim);">racketmojo.com</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style>
+  .site-header {
+    border-bottom: 1px solid var(--color-dark-border);
+    position: sticky;
+    top: 0;
+    background: rgba(22, 22, 24, 0.92);
+    backdrop-filter: blur(12px);
+    z-index: 100;
+  }
+  .logo:hover { opacity: 0.9; }
+  nav a:hover { color: var(--color-gold) !important; }
+</style>

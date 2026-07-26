@@ -1,0 +1,58 @@
+# GitHub PR Workflow: Article Review
+#
+# When a new branch is pushed with articles in src/content/posts/,
+# this workflow builds the site to catch broken markdown / frontmatter.
+# PRs can be reviewed for content before merging.
+
+name: Article Review
+
+on:
+  pull_request:
+    paths:
+      - 'src/content/posts/**'
+      - 'src/styles/**'
+      - 'src/layouts/**'
+      - 'astro.config.mjs'
+      - 'package.json'
+
+jobs:
+  build-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build site
+        run: npm run build
+
+      - name: Comment PR on success
+        if: success()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '✅ **Build passed** — site compiles cleanly with these changes. Ready for content review.\n\n[Preview deploy triggered on Netlify]'
+            });
+
+      - name: Comment PR on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '❌ **Build failed** — check the workflow logs for errors. Common issues:\n- Broken markdown syntax\n- Missing frontmatter fields\n- Invalid `pubDate` format\n- Referenced image not in `public/images/posts/`'
+            });

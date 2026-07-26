@@ -1,0 +1,87 @@
+---
+// [lang]/index.astro — Homepage per locale
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'en' } },
+    { params: { lang: 'ar' } },
+    { params: { lang: 'es' } },
+  ];
+}
+
+const { lang } = Astro.params;
+
+const homeContent = {
+  en: {
+    title: 'Find Your Perfect Padel Racket',
+    subtitle: 'AI-powered racket recommendations for players who want to improve their game.',
+    cta: 'Coming Soon',
+  },
+  ar: {
+    title: 'اكتشف المضرب المثالي لك',
+    subtitle: 'توصيات ذكية لمضارب البادل لتحسين أدائك في الملعب.',
+    cta: 'قريباً',
+  },
+  es: {
+    title: 'Encuentra tu Pala de Pádel Perfecta',
+    subtitle: 'Recomendaciones impulsadas por IA para jugadores que quieren mejorar su juego.',
+    cta: 'Próximamente',
+  },
+};
+
+const { title, subtitle, cta } = homeContent[lang] || homeContent.en;
+---
+
+<BaseLayout lang={lang} title={title} description={subtitle}>
+  <section class="container" style="text-align:center;padding-top:6rem;padding-bottom:6rem;">
+    <!-- Logo area -->
+    <div style="margin-bottom:2rem;">
+      <span style="font-size:4rem;">◆</span>
+    </div>
+
+    <h1 style="margin-bottom:1rem;">{title}</h1>
+    <p style="font-size:1.2rem;color:var(--color-text-muted);max-width:520px;margin:0 auto 2.5rem;">
+      {subtitle}
+    </p>
+
+    <a
+      href={`/${lang}/blog/`}
+      style="display:inline-block;background:var(--color-gold);color:var(--color-dark);padding:0.8rem 2rem;border-radius:8px;font-weight:700;font-size:1.05rem;text-decoration:none;transition:background 0.2s;"
+    >
+      {cta}
+    </a>
+  </section>
+
+  <!-- Featured section -->
+  <section class="container" style="padding-bottom:4rem;">
+    <h2 style="text-align:center;margin-bottom:2rem;font-size:1.5rem;">
+      Latest from the Blog
+    </h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;">
+      <!-- Cards will be populated dynamically; static placeholder for now -->
+      <div class="card">
+        <div class="card-body">
+          <h3 style="font-size:1.1rem;margin-bottom:0.5rem;">Coming soon</h3>
+          <p style="color:var(--color-text-muted);font-size:0.9rem;">Articles about padel rackets, techniques, and AI recommendations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .card {
+    background: var(--color-dark-card);
+    border: 1px solid var(--color-dark-border);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: border-color 0.2s;
+  }
+  .card:hover {
+    border-color: var(--color-gold);
+  }
+  .card-body {
+    padding: 1.25rem;
+  }
+</style>

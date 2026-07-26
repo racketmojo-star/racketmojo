@@ -1,0 +1,169 @@
+/* ═══════════════════════════════════════════════════
+   RacketMojo — Brand Design System
+   Logo palette: #F6B418 (gold) + #161618 (dark)
+   ═══════════════════════════════════════════════════ */
+
+/* ─── CSS Custom Properties ─── */
+:root {
+  /* Brand */
+  --color-gold:        #F6B418;
+  --color-gold-light:  #F8C94D;
+  --color-gold-dark:   #D49A0F;
+
+  /* Surfaces */
+  --color-dark:        #161618;
+  --color-dark-card:   #1E1E20;
+  --color-dark-border: #2A2A2D;
+
+  /* Text */
+  --color-text:        #F5F5F5;
+  --color-text-muted:  #8D8D8E;
+  --color-text-dim:    #5C5C5E;
+
+  /* Accent */
+  --color-gray:        #8D8D8E;
+  --color-gray-light:  #DDDDDD;
+
+  /* Layout */
+  --max-width:         720px;
+  --font-sans:         'Inter', system-ui, -apple-system, sans-serif;
+  --font-arabic:       'Noto Sans Arabic', sans-serif;
+  --font-mono:         'JetBrains Mono', 'Fira Code', monospace;
+}
+
+/* ─── Reset ─── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-dark);
+  color: var(--color-text);
+  line-height: 1.7;
+}
+
+/* ─── RTL Support ─── */
+[dir='rtl'] {
+  direction: rtl;
+  font-family: var(--font-arabic), var(--font-sans);
+}
+
+/* ─── Typography ─── */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+h1 { font-size: clamp(2rem, 5vw, 3rem); }
+h2 { font-size: clamp(1.5rem, 4vw, 2rem); }
+h3 { font-size: clamp(1.2rem, 3vw, 1.5rem); }
+
+p {
+  margin-bottom: 1.2rem;
+  color: var(--color-text);
+}
+
+a {
+  color: var(--color-gold);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: var(--color-gold-light);
+}
+
+blockquote {
+  border-left: 3px solid var(--color-gold);
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+[dir='rtl'] blockquote {
+  border-left: none;
+  border-right: 3px solid var(--color-gold);
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  background: var(--color-dark-card);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  color: var(--color-gold-light);
+}
+
+pre {
+  background: var(--color-dark-card);
+  border: 1px solid var(--color-dark-border);
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+  color: var(--color-text);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* ─── Utility Classes ─── */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* ─── Selection ─── */
+::selection {
+  background: var(--color-gold);
+  color: var(--color-dark);
+}
+
+/* ─── Scrollbar (dark theme) ─── */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-dark-border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gray);
+}
