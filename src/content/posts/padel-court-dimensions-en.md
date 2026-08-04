@@ -5,13 +5,23 @@ pubDate: 2026-08-04
 tags: ["court", "dimensions", "guide", "rules"]
 featured: false
 heroImage: "/images/posts/padel-court-dimensions.webp"
+
+faq:
+  - q: "What are the official padel court dimensions?"
+    a: "An official padel court is 10 meters wide and 20 meters long, with side walls 3m high and back walls 4m high. The net is 0.88m in the center and 0.92m at the posts."
+  - q: "How high are padel court walls?"
+    a: "Side walls are 3 meters high; the back wall is 4 meters high across the 10m back of the court."
 ---
+
 
 Before you step onto a padel court, it helps to know exactly what you're stepping onto. The court is smaller than a tennis court, enclosed by glass and mesh, and full of lines and angles that decide how every single point is played.
 
 Whether you're building a court, choosing between clubs, or just trying to understand why the ball behaves the way it does, these are the official numbers — the same measurements used in every international competition.
 
 ## The Playing Area: 10m x 20m
+
+
+With the court layout in mind, mastering the serve is your first real weapon. [<strong>Read more about the court setup here</strong>](/en/blog/padel-serve/)
 
 A padel court is a rectangle exactly 10 metres wide and 20 metres long. That's the same court used in official competition worldwide, and it's less than half the length of a tennis court — one big reason rallies are so much longer in padel: there's simply less ground to cover.
 

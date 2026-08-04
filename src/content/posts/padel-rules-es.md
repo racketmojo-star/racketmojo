@@ -5,13 +5,25 @@ pubDate: 2026-08-04
 tags: ["reglas", "guía", "principiantes"]
 featured: false
 heroImage: "/images/posts/padel-rules.webp"
+
+faq:
+  - q: "¿Cómo se puntúa en el pádel?"
+    a: "El pádel usa la puntuación del tenis: 15, 30, 40 y juego, y hay que ganar por dos puntos. Los partidos son al mejor de tres sets, con tie-break en 6-6."
+  - q: "¿Se puede golpear la bola contra las paredes en el pádel?"
+    a: "Sí, tras el bote en tu lado puedes jugarla desde las paredes laterales y traseras. Las paredes son parte esencial de la estrategia."
+  - q: "¿Cómo es el saque en el pádel?"
+    a: "El saque es de abajo: la bola debe botar una vez antes de golpearla por debajo de la cintura y debe caer en el cuadro de saque diagonal."
 ---
+
 
 Has reservado tu primera sesión de pádel. Quizá has visto algunos partidos, quizá no — y de repente alguien grita «30-30», la bola sale disparada del cristal y un punto se repite por razones que no acabas de entender. Puede sonar como otro idioma.
 
 La buena noticia: las reglas del pádel son mucho más fáciles de lo que parecen. Una vez que entiendes la puntuación, el saque y unas pocas reglas de pared, podrás seguir cualquier partido — y salir a la pista en tus primeros encuentros con confianza en lugar de a ciegas.
 
 ## Cómo Funciona la Puntuación en el Pádel
+
+
+¿Nuevo en el deporte? Entender el diseño de la pista primero hace que las reglas sean mucho más fáciles de seguir. [<strong>Lee más sobre la pista aquí</strong>](/es/blog/padel-court-dimensions/)
 
 ### Puntos: 0, 15, 30, 40
 

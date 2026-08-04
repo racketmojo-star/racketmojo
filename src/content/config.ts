@@ -12,6 +12,10 @@ const posts = defineCollection({
     draft: z.boolean().default(false),
     featured: z.boolean().default(false),
     author: z.string().default('RacketMojo'),
+    faq: z.array(z.object({
+      q: z.string(),
+      a: z.string(),
+    })).optional(),
   }),
 });
 

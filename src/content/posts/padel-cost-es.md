@@ -5,11 +5,21 @@ pubDate: 2026-08-04
 tags: ["coste", "presupuesto", "principiantes"]
 featured: false
 heroImage: "/images/posts/padel-cost.webp"
+
+faq:
+  - q: "¿Cuánto cuesta empezar a jugar al pádel?"
+    a: "Espera 60-400 € por una pala, 80-200 € por zapatillas y 5-15 € por persona y hora de pista. Los clubes suelen ofrecer cuotas mensuales de 30-100 €."
+  - q: "¿Es el pádel más caro que el tenis?"
+    a: "Generalmente similar o algo más barato: la pista se comparte entre cuatro jugadores, así que el coste por hora por persona suele ser menor."
 ---
+
 
 El pádel se vende a menudo como el "primo barato" del tenis. Pero, ¿es realmente barato? La respuesta honesta: depende de dónde vivas, de cuánto juegues y de qué compres. Esta es la imagen real para 2026.
 
 ## Las cifras reales: cuánto cuesta cada cosa
+
+
+Una vez que conoces el presupuesto, el siguiente paso es encontrar pistas cerca de ti. [<strong>Lee más sobre la pista aquí</strong>](/es/blog/where-to-play/)
 
 | Artículo | Precio habitual | Notas |
 |----------|----------------:|-------|

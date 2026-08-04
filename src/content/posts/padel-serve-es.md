@@ -5,13 +5,23 @@ pubDate: 2026-08-04
 tags: ["saque", "técnica", "principiantes", "guía"]
 featured: false
 heroImage: "/images/posts/padel-serve.webp"
+
+faq:
+  - q: "¿Qué es un saque legal en pádel?"
+    a: "La bola debe botar una vez y golpearse por debajo de la cintura con movimiento de abajo. Debe caer en el cuadro diagonal sin tocar las paredes antes."
+  - q: "¿Por qué el saque de pádel es de abajo?"
+    a: "El saque de abajo alarga los puntos y reduce la ventaja del saque, haciendo el juego más táctico."
 ---
+
 
 En tenis, el saque es un arma — un misil lanzado a 200 km/h que gana puntos directamente. En pádel, el saque es otra cosa por completo: una reanudación legal por debajo de la cintura diseñada para iniciar el punto, no para terminarlo.
 
 Esa es una gran noticia para los principiantes. No necesitas potencia ni años de práctica para sacar bien en pádel — necesitas técnica correcta y constancia. Domina lo básico y mantendrás tu saque frente a jugadores mucho más fuertes que tú.
 
 ## Primero, las Reglas que Definen el Saque
+
+
+El saque sigue reglas específicas — conviene repasar cómo funcionan la puntuación y las faltas antes de entrar a la pista. [<strong>Lee más sobre la pista aquí</strong>](/es/blog/padel-rules/)
 
 El saque de pádel es el golpe más regulado del deporte. Acierta con estas cinco reglas y nunca te cantarán un saque ilegal:
 

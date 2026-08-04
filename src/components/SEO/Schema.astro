@@ -7,6 +7,7 @@ interface Props {
   publishDate?: Date;
   modifiedDate?: Date;
   tags?: string[];
+  faq?: { q: string; a: string }[];
 }
 
 const {
@@ -17,6 +18,7 @@ const {
   publishDate,
   modifiedDate,
   tags = [],
+  faq = [],
 } = Astro.props;
 
 const siteUrl = 'https://racketmojo.com';
@@ -113,9 +115,28 @@ if (type === 'homepage') {
     articleSchema.keywords = tags.join(', ');
   }
 
+  // FAQPage schema — strong GEO signal for AI assistants
+  let faqSchema = null;
+  if (faq.length > 0) {
+    faqSchema = {
+      '@type': 'FAQPage',
+      '@id': `${canonicalUrl}#faq`,
+      mainEntity: faq.map(item => ({
+        '@type': 'Question',
+        name: item.q,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: item.a,
+        },
+      })),
+    };
+  }
+
   schemaData = {
     '@context': 'https://schema.org',
-    '@graph': [articleSchema, breadcrumbList, organizationSchema],
+    '@graph': faqSchema
+      ? [articleSchema, faqSchema, breadcrumbList, organizationSchema]
+      : [articleSchema, breadcrumbList, organizationSchema],
   };
 }
 ---

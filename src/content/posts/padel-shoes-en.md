@@ -5,13 +5,23 @@ pubDate: 2026-08-04
 tags: ["shoes", "gear", "buying-guide"]
 featured: false
 heroImage: "/images/posts/padel-shoes.webp"
+
+faq:
+  - q: "Do you need special shoes for padel?"
+    a: "Yes. Padel shoes have gum soles for grip on artificial grass and lateral support for the side-to-side movements that dominate the sport."
+  - q: "How long do padel shoes last?"
+    a: "With regular play, expect 6-12 months. Replace them when the sole is worn smooth or lateral support breaks down."
 ---
+
 
 Padel is a game of explosive lateral movement. In a single point you shuffle sideways, lunge for a low ball, pivot to the wall, and brake hard on artificial grass — sometimes all within five seconds. The racket gets all the attention, but your shoes are the only thing between you and the court on every one of those movements. Choose badly and you're sliding, slipping, and nursing sore knees instead of playing.
 
 Running shoes are the most common mistake. They're built for forward motion, and padel is anything but. Here's what actually matters.
 
 ## Why Padel Shoes Are Different
+
+
+Good shoes keep you stable — and pairing them with fresh balls keeps your game consistent. [<strong>Read more about the court setup here</strong>](/en/blog/padel-balls/)
 
 Padel is played in short, explosive bursts. You rarely run more than a few meters, but you change direction constantly — and on artificial grass, that means constant friction between your outsole and the fibers. The result is a very specific wear pattern and a very specific need: a shoe that grips when you push, yet still allows that controlled slide when you reach for a ball near the wall.
 

@@ -5,13 +5,25 @@ pubDate: 2026-08-04
 tags: ["rules", "guide", "beginners"]
 featured: false
 heroImage: "/images/posts/padel-rules.webp"
+
+faq:
+  - q: "How do you score in padel?"
+    a: "Padel uses tennis scoring: 15, 30, 40, then game, and you must win by two points. Matches are best of three sets, with a tie-break at 6-6."
+  - q: "Can the ball hit the walls in padel?"
+    a: "Yes, after the ball bounces on your side of the court you can play it off the side and back walls. Walls are a core part of padel strategy."
+  - q: "How does the serve work in padel?"
+    a: "The serve is underhand: the ball must bounce once before you strike it below waist level, and it must land in the diagonal service box."
 ---
+
 
 You've booked your first padel session. Maybe you've watched a few matches, maybe you haven't — and suddenly someone shouts "30-30," the ball comes flying off the glass, and a point gets replayed for reasons you can't quite follow. It can sound like a completely different language.
 
 The good news: padel's rules are far easier than they look. Once you understand scoring, the serve, and a handful of wall rules, you'll be able to follow any match — and step onto the court for your first games with confidence instead of guesswork.
 
 ## How Scoring Works in Padel
+
+
+New to the sport? Understanding the court layout first makes the rules much easier to follow. [<strong>Read more about the court setup here</strong>](/en/blog/padel-court-dimensions/)
 
 ### Points: 0, 15, 30, 40
 

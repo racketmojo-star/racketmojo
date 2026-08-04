@@ -1,0 +1,82 @@
+---
+// NewsletterSignup.astro — Netlify-form newsletter capture (no backend needed)
+interface Props {
+  lang: string;
+}
+
+const { lang } = Astro.props;
+
+const labels: Record<string, { title: string; sub: string; placeholder: string; btn: string; success: string }> = {
+  en: {
+    title: 'Get new padel guides in your inbox',
+    sub: 'Racket reviews, buying tips, and technique articles — no spam, unsubscribe anytime.',
+    placeholder: 'you@example.com',
+    btn: 'Subscribe',
+    success: 'Thanks! Please check your inbox to confirm.',
+  },
+  ar: {
+    title: 'احصل على أدلة البادل الجديدة في بريدك',
+    sub: 'مراجعات المضارب، نصائح الشراء، ومقالات تقنية — بدون إزعاج، يمكنك إلغاء الاشتراك في أي وقت.',
+    placeholder: 'you@example.com',
+    btn: 'اشترك',
+    success: 'شكرًا! يرجى التحقق من بريدك للتأكيد.',
+  },
+  es: {
+    title: 'Recibe nuevas guías de pádel en tu correo',
+    sub: 'Reseñas de palas, consejos de compra y artículos de técnica — sin spam, cancela cuando quieras.',
+    placeholder: 'you@example.com',
+    btn: 'Suscribirse',
+    success: '¡Gracias! Revisa tu correo para confirmar.',
+  },
+};
+
+const l = labels[lang] || labels.en;
+---
+
+<div class="newsletter" data-newsletter>
+  <h3 class="nl-title">{l.title}</h3>
+  <p class="nl-sub">{l.sub}</p>
+  <form class="nl-form" method="POST" data-netlify="true" name="newsletter" netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="newsletter" />
+    <input type="hidden" name="lang" value={lang} />
+    <p class="nl-hp"><label>Don't fill this out: <input name="bot-field" /></label></p>
+    <input class="nl-input" type="email" name="email" placeholder={l.placeholder} required />
+    <button class="nl-btn" type="submit">{l.btn}</button>
+  </form>
+</div>
+
+<style>
+  .newsletter {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-light);
+    border-radius: 14px;
+    padding: 1.5rem 1.75rem;
+    margin: 2.5rem 0 0.5rem;
+  }
+  .nl-title { font-size: 1.05rem; font-weight: 700; margin-bottom: 0.35rem; }
+  .nl-sub { font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.5; margin-bottom: 1rem; }
+  .nl-form { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+  .nl-input {
+    flex: 1 1 180px;
+    padding: 0.65rem 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-family: inherit;
+    background: #fff;
+  }
+  .nl-input:focus { outline: 2px solid var(--color-orange); border-color: transparent; }
+  .nl-btn {
+    background: var(--color-orange);
+    color: #fff;
+    border: none;
+    padding: 0.65rem 1.4rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .nl-btn:hover { background: var(--color-orange-dark); }
+  .nl-hp { display: none !important; }
+</style>

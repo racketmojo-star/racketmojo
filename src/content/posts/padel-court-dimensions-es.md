@@ -5,13 +5,23 @@ pubDate: 2026-08-04
 tags: ["pista", "dimensiones", "reglas", "guía"]
 featured: false
 heroImage: "/images/posts/padel-court-dimensions.webp"
+
+faq:
+  - q: "¿Cuáles son las medidas oficiales de una pista de pádel?"
+    a: "Una pista oficial mide 10 metros de ancho y 20 de largo, con paredes laterales de 3m y pared trasera de 4m. La red mide 0.88m en el centro y 0.92m en los postes."
+  - q: "¿Qué altura tienen las paredes de una pista de pádel?"
+    a: "Las paredes laterales miden 3 metros; la pared trasera mide 4 metros a lo largo de los 10m del fondo."
 ---
+
 
 Antes de pisar una pista de pádel, conviene saber exactamente sobre qué te estás subiendo. La pista es más pequeña que una de tenis, está cerrada con cristal y malla, y está llena de líneas y ángulos que deciden cómo se juega cada punto.
 
 Ya sea que estés construyendo una pista, eligiendo entre clubes o simplemente tratando de entender por qué la bola se comporta como lo hace, estos son los números oficiales — las mismas medidas que se usan en toda competición internacional.
 
 ## La Zona de Juego: 10m x 20m
+
+
+Con el diseño de la pista en mente, dominar el saque es tu primera arma real. [<strong>Lee más sobre la pista aquí</strong>](/es/blog/padel-serve/)
 
 Una pista de pádel es un rectángulo de exactamente 10 metros de ancho por 20 metros de largo. Es la misma pista que se usa en la competición oficial en todo el mundo, y mide menos de la mitad del largo de una pista de tenis — una gran razón por la que los puntos son mucho más largos en pádel: simplemente hay menos terreno que cubrir.
 

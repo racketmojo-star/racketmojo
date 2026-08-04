@@ -5,11 +5,21 @@ pubDate: 2026-08-04
 tags: ["cost", "budget", "beginner"]
 featured: false
 heroImage: "/images/posts/padel-cost.webp"
+
+faq:
+  - q: "How much does it cost to start playing padel?"
+    a: "Expect €60-400 for a racket, €80-200 for shoes, and €5-15 per person per hour of court rental. Clubs often have monthly memberships from €30-100."
+  - q: "Is padel more expensive than tennis?"
+    a: "Generally similar or slightly cheaper: courts are shared by four players, so per-person hourly costs are often lower than tennis."
 ---
+
 
 Padel is often marketed as the "cheaper cousin" of tennis. But is it actually cheap? The honest answer: it depends on where you live, how often you play, and what you buy. Here's the real picture for 2026.
 
 ## The Real Numbers: What Things Cost
+
+
+Once you know the budget, the next step is finding courts near you. [<strong>Read more about the court setup here</strong>](/en/blog/where-to-play/)
 
 | Item | Typical price range | Notes |
 |------|--------------------:|-------|

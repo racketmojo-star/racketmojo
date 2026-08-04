@@ -5,13 +5,23 @@ pubDate: 2026-08-04
 tags: ["técnica", "golpes", "comparativa"]
 featured: false
 heroImage: "/images/posts/bandeja-vibora.webp"
+
+faq:
+  - q: "¿Cuál es la diferencia entre bandeja y víbora?"
+    a: "La bandeja es un golpe por arriba controlado y alto que cae profundo con efecto. La víbora es más rápida, baja y agresiva con mucho efecto. La víbora es más difícil de dominar."
+  - q: "¿Cuándo usar una bandeja?"
+    a: "Usa la bandeja cuando necesites tiempo y control — en defensa o para reiniciar el punto desde el fondo."
 ---
+
 
 Pocas cosas confunden tanto al jugador nuevo de pádel como los dos golpes por alto. Tu compañero grita "¡bandeja!", tu rival suelta una "víbora", y ambos parecen... ¿iguales? Los dos se juegan por encima de la cabeza, los dos usan un movimiento de corte y los dos se vuelven imprescindibles desde el nivel intermedio en adelante. Pero la bandeja y la víbora son armas muy distintas — y confundirlas cuesta puntos.
 
 Vamos a desgranar cada golpe y luego compararlos cara a cara.
 
 ## ¿Qué es la Bandeja?
+
+
+Tu capacidad para golpear depende también de la forma de tu pala — potencia o control, cada una tiene su papel. [<strong>Lee más sobre la pista aquí</strong>](/es/blog/racket-shapes/)
 
 La bandeja es el golpe por alto controlado y defensivo. Se juega con un movimiento de corte que envía la pelota en un arco alto, al fondo de la pista rival — normalmente hacia el revés.
 

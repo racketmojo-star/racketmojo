@@ -5,13 +5,23 @@ pubDate: 2026-08-04
 tags: ["technique", "shots", "comparison"]
 featured: false
 heroImage: "/images/posts/bandeja-vibora.webp"
+
+faq:
+  - q: "What is the difference between bandeja and vibora?"
+    a: "The bandeja is a controlled, high overhead shot that lands deep with slice. The vibora is faster, lower, and aggressive with heavy spin. Vibora is harder to master."
+  - q: "When should you use a bandeja?"
+    a: "Use the bandeja when you need time and control — defensively or to reset the point from the back of the court."
 ---
+
 
 Few things confuse new padel players like the two overhead shots. Your partner shouts "bandeja!", your opponent rips a "vibora!", and both look... kind of similar? They're both played from above the head, both use a slicing motion, and both become essential from the intermediate level upward. But the bandeja and the vibora are very different weapons — and confusing them costs points.
 
 Let's break down each shot, then compare them head to head.
 
 ## What Is the Bandeja?
+
+
+Your ability to hit these shots also depends on your racket's shape — power or control, each has its role. [<strong>Read more about the court setup here</strong>](/en/blog/racket-shapes/)
 
 The bandeja (Spanish for "tray") is the controlled, defensive overhead. You play it with a slicing motion that sends the ball in a high arc, deep into the opponent's court — usually toward the backhand corner.
 

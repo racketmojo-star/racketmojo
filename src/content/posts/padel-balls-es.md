@@ -5,13 +5,23 @@ pubDate: 2026-08-04
 tags: ["pelotas", "equipamiento", "guía-de-compra"]
 featured: false
 heroImage: "/images/posts/padel-balls.webp"
+
+faq:
+  - q: "¿Cada cuánto hay que cambiar las pelotas de pádel?"
+    a: "Las pelotas pierden presión notablemente tras 4-6 horas de juego. Los jugadores serios usan un tubo nuevo cada pocas sesiones."
+  - q: "¿Las pelotas de pádel son iguales que las de tenis?"
+    a: "No. Son ligeramente más pequeñas y con menos presión, lo que da un bote más suave adecuado para el juego de pared."
 ---
+
 
 Cada punto de pádel empieza y termina con el mismo objeto: la pelota. Sin embargo, la mayoría de los jugadores dedican una hora a elegir la pala y tres segundos a coger el primer tubo que encuentran en la recepción del club. Es al revés. La pelota es el único elemento que tocas en cada punto, y una pelota muerta o inadecuada sabotea tu juego en silencio antes de que empieces a golpear.
 
 La buena noticia: elegir bien es sencillo cuando entiendes dos cosas — qué diferencia a la pelota de pádel de la de tenis, y lo rápido que pierde su presión.
 
 ## Pelotas de Pádel vs Pelotas de Tenis: Pequeñas pero Decisivas
+
+
+Las pelotas nuevas importan — pero también tener el calzado adecuado para moverse bien. [<strong>Lee más sobre la pista aquí</strong>](/es/blog/padel-shoes/)
 
 Las pelotas de pádel parecen de tenis, pero son otro animal. Las pelotas oficiales de pádel son **ligeramente más pequeñas y tienen menor presión interna** que las de tenis — la combinación exacta que da al pádel su ritmo más lento, sus rallies más controlados y ese tacto suave característico contra el cristal.
 

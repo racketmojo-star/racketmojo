@@ -5,13 +5,23 @@ pubDate: 2026-08-04
 tags: ["courts", "guide", "community"]
 featured: false
 heroImage: "/images/posts/where-to-play.webp"
+
+faq:
+  - q: "How do I find padel courts near me?"
+    a: "Check the FIP International Padel Federation directory (70+ countries), your national federation, Google Maps, and booking apps like Playtomic or Matchi."
+  - q: "Is padel played indoors or outdoors?"
+    a: "Both. Indoor courts let you play year-round regardless of weather; outdoor courts are more common in warm climates. Many clubs offer both."
 ---
+
 
 Padel has gone from a niche Spanish pastime to one of the world's fastest-growing sports. By 2026, more than 25 million people play regularly, and new courts are opening every month — from converted tennis clubs in Scandinavia to purpose-built centers in Dubai and Mexico City.
 
 But here's the paradox: the sport has never been more available, yet finding the right court for you can still feel like a scavenger hunt. Whether you're a complete beginner or relocating to a new city, this guide shows you exactly how to find courts near you — and how to pick the ones worth your money.
 
 ## Start With the Official Sources
+
+
+Found your court? Knowing what playing costs helps you plan sessions without surprises. [<strong>Read more about the court setup here</strong>](/en/blog/padel-cost/)
 
 The most reliable way to find real, playable courts is to skip the generic search results and go straight to the federations. The International Padel Federation (FIP) maintains a directory of affiliated federations and clubs across more than 70 countries. From there, national bodies — like the RFEP in Spain or the FIP-affiliated federations across Latin America — publish searchable club lists with addresses, contact details, and competition calendars.
 

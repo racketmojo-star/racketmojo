@@ -5,13 +5,23 @@ pubDate: 2026-08-04
 tags: ["serve", "technique", "beginners", "guide"]
 featured: false
 heroImage: "/images/posts/padel-serve.webp"
+
+faq:
+  - q: "What is a legal serve in padel?"
+    a: "The ball must bounce once, then be struck below waist level with an underhand motion. It must land in the diagonal service box and hit no walls first."
+  - q: "Why is the padel serve underhand?"
+    a: "The underhand serve keeps rallies going and reduces the serve's advantage, making points longer and more tactical."
 ---
+
 
 In tennis, the serve is a weapon — a cannonball blasted at 200 km/h that wins points outright. In padel, the serve is something else entirely: a legal, underhand restart designed to get the point going, not to end it.
 
 That's great news for beginners. You don't need power or years of practice to serve well in padel — you need correct technique and consistency. Master the basics and you'll hold your serve against players far stronger than you.
 
 ## First, the Rules That Define the Serve
+
+
+The serve follows specific rules — worth reviewing how scoring and faults work before stepping on court. [<strong>Read more about the court setup here</strong>](/en/blog/padel-rules/)
 
 The padel serve is the most regulated shot in the sport. Get these five rules right and you'll never be called for an illegal serve:
 

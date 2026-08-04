@@ -5,13 +5,23 @@ pubDate: 2026-08-04
 tags: ["zapatillas", "equipamiento", "guía-de-compra"]
 featured: false
 heroImage: "/images/posts/padel-shoes.webp"
+
+faq:
+  - q: "¿Necesitas zapatillas especiales para pádel?"
+    a: "Sí. Las zapatillas de pádel tienen suela de goma para agarre en césped artificial y soporte lateral para los movimientos laterales que dominan el deporte."
+  - q: "¿Cuánto duran las zapatillas de pádel?"
+    a: "Con juego regular, espera 6-12 meses. Cámbialas cuando la suela esté lisa o el soporte lateral se debilite."
 ---
+
 
 El pádel es un juego de movimiento lateral explosivo. En un solo punto te desplazas de lado, te lanzas a por una bola baja, giras hacia la pared y frenas en seco sobre césped artificial — a veces todo en cinco segundos. La pala se lleva toda la atención, pero tus zapatillas son lo único que hay entre tú y la pista en cada uno de esos movimientos. Si eliges mal, acabarás resbalando y con las rodillas doloridas en lugar de jugando.
 
 Las zapatillas de running son el error más común. Están hechas para el movimiento hacia delante, y el pádel es todo menos eso. Esto es lo que importa de verdad.
 
 ## Por Qué las Zapatillas de Pádel son Diferentes
+
+
+Un buen calzado te mantiene estable — y combinarlo con pelotas nuevas mantiene tu juego consistente. [<strong>Lee más sobre la pista aquí</strong>](/es/blog/padel-balls/)
 
 El pádel se juega en ráfagas cortas y explosivas. Rara vez corres más de unos metros, pero cambias de dirección constantemente — y sobre césped artificial, eso significa fricción continua entre la suela y las fibras. El resultado es un patrón de desgaste muy concreto y una necesidad muy concreta: una zapatilla que agarre cuando empujas, pero que permita ese deslizamiento controlado cuando vas a por una bola cerca de la pared.
 
