@@ -27,7 +27,7 @@ const segments = pathname.split('/').filter(Boolean);
 const locales = ['en', 'ar', 'es'];
 const currentLocale = locales.includes(segments[0]) ? segments[0] : 'en';
 const canonicalUrl = `${siteUrl}${pathname}`;
-const logoUrl = `${siteUrl}/images/racketmojo-logo.svg`;
+const logoUrl = `${siteUrl}/images/racketmojo-logo.png`;
 
 // Locale labels for breadcrumb
 const localeLabels: Record<string, { home: string; blog: string }> = {

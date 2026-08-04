@@ -95,7 +95,7 @@ const ogLocaleMap: Record<string, string> = { en: 'en_US', ar: 'ar_AR', es: 'es_
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Arabic:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
 
   <slot name="head" />
 </head>
@@ -103,7 +103,7 @@ const ogLocaleMap: Record<string, string> = { en: 'en_US', ar: 'ar_AR', es: 'es_
   <header class="site-header">
     <div class="container nav-inner">
       <a href={`/${lang}/`} class="logo">
-        <span class="logo-icon">◆</span> RacketMojo
+        <img src="/images/racketmojo-logo.png" alt="RacketMojo" class="logo-img" width="40" height="30" />
       </a>
       <nav class="nav-links" aria-label="Main navigation">
         <a href={`/${lang}/blog/`}>Blog</a>
@@ -153,7 +153,13 @@ const ogLocaleMap: Record<string, string> = { en: 'en_US', ar: 'ar_AR', es: 'es_
     display: flex; align-items: center; gap: 0.4rem;
     font-weight: 800; font-size: 1.1rem; color: var(--color-text);
   }
-  .logo-icon { color: var(--color-orange); font-size: 1.2rem; }
+  .logo-img {
+    display: block;
+    max-height: 34px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
   .logo:hover { opacity: 0.8; }
 
   .nav-links { display: flex; gap: 0.75rem; align-items: center; }
