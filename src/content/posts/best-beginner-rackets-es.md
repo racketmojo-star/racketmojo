@@ -4,7 +4,7 @@ description: "Comparativa de las 5 mejores palas de pádel para principiantes en
 pubDate: 2026-07-26
 tags: ["principiantes", "top-picks", "review-palas", "equipamiento"]
 featured: true
-heroImage: "/images/posts/best-beginner-rackets.png"
+heroImage: "/images/posts/best-beginner-rackets.webp"
 ---
 
 Empezar en el pádel es emocionante. Pero elegir tu primera pala puede ser abrumador: cientos de opciones, jerga que aún no entiendes, y precios desde $50 hasta $500.

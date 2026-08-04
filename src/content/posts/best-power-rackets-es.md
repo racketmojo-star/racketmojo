@@ -4,7 +4,7 @@ description: "Palas diamante y lágrima para jugadores agresivos que rematan en 
 pubDate: 2026-07-26
 tags: ["potencia", "avanzado", "review-palas", "diamante"]
 featured: true
-heroImage: "/images/posts/best-power-rackets.png"
+heroImage: "/images/posts/best-power-rackets.webp"
 ---
 
 Algunos jugadores viven en la red. No solo quieren devolver la bola — quieren terminar el punto. Cada remate es una oportunidad, cada volea una declaración.

@@ -4,7 +4,7 @@ description: "Everything you need to know about padel racket shapes, weights, ma
 pubDate: 2026-07-26
 tags: ["beginners", "guide", "equipment", "racket-choice"]
 featured: true
-heroImage: "/images/posts/first-racket.png"
+heroImage: "/images/posts/first-racket.webp"
 ---
 
 Choosing your first padel racket can feel overwhelming. Walk into any store and you'll find hundreds of options — different shapes, weights, materials, and brands all claiming to be the best. But here's the truth: **the best racket isn't the most expensive one. It's the one that matches how YOU play.**

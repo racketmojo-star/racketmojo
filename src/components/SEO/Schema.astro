@@ -1,0 +1,123 @@
+---
+interface Props {
+  type: 'homepage' | 'article';
+  title?: string;
+  description?: string;
+  image?: string;
+  publishDate?: Date;
+  modifiedDate?: Date;
+  tags?: string[];
+}
+
+const {
+  type,
+  title = '',
+  description = '',
+  image = '',
+  publishDate,
+  modifiedDate,
+  tags = [],
+} = Astro.props;
+
+const siteUrl = 'https://racketmojo.com';
+const pathname = Astro.url.pathname;
+const segments = pathname.split('/').filter(Boolean);
+const locales = ['en', 'ar', 'es'];
+const currentLocale = locales.includes(segments[0]) ? segments[0] : 'en';
+const canonicalUrl = `${siteUrl}${pathname}`;
+const logoUrl = `${siteUrl}/images/racketmojo-logo.svg`;
+
+// Locale labels for breadcrumb
+const localeLabels: Record<string, { home: string; blog: string }> = {
+  en: { home: 'Home', blog: 'Blog' },
+  ar: { home: 'الرئيسية', blog: 'المدونة' },
+  es: { home: 'Inicio', blog: 'Blog' },
+};
+const labels = localeLabels[currentLocale] || localeLabels.en;
+
+// Organization schema (shared)
+const organizationSchema = {
+  '@type': 'SportsOrganization',
+  '@id': `${siteUrl}/#organization`,
+  name: 'RacketMojo',
+  url: siteUrl,
+  logo: {
+    '@type': 'ImageObject',
+    '@id': `${siteUrl}/#logo`,
+    url: logoUrl,
+    caption: 'RacketMojo',
+  },
+  image: { '@id': `${siteUrl}/#logo` },
+  sameAs: ['https://www.instagram.com/racketmojo/'],
+};
+
+let schemaData: Record<string, any>;
+
+if (type === 'homepage') {
+  schemaData = {
+    '@context': 'https://schema.org',
+    ...organizationSchema,
+  };
+} else {
+  // BreadcrumbList
+  const breadcrumbList = {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: labels.home,
+        item: `${siteUrl}/${currentLocale}/`,
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: labels.blog,
+        item: `${siteUrl}/${currentLocale}/blog/`,
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: title,
+        item: canonicalUrl,
+      },
+    ],
+  };
+
+  // Article
+  const articleSchema: Record<string, any> = {
+    '@type': 'BlogPosting',
+    '@id': `${canonicalUrl}#article`,
+    isPartOf: { '@type': 'WebPage', '@id': canonicalUrl },
+    headline: title,
+    description: description,
+    datePublished: publishDate ? publishDate.toISOString() : undefined,
+    dateModified: modifiedDate
+      ? modifiedDate.toISOString()
+      : publishDate
+        ? publishDate.toISOString()
+        : undefined,
+    author: {
+      '@type': 'Organization',
+      name: 'RacketMojo',
+      url: `${siteUrl}/${currentLocale}/`,
+    },
+    publisher: { '@id': `${siteUrl}/#organization` },
+    mainEntityOfPage: canonicalUrl,
+  };
+
+  if (image) {
+    articleSchema.image = image.startsWith('http') ? image : `${siteUrl}${image}`;
+  }
+  if (tags.length > 0) {
+    articleSchema.keywords = tags.join(', ');
+  }
+
+  schemaData = {
+    '@context': 'https://schema.org',
+    '@graph': [articleSchema, breadcrumbList, organizationSchema],
+  };
+}
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schemaData, null, 0)} />

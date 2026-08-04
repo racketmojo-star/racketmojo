@@ -4,7 +4,7 @@ description: "¿Carbono o fibra de vidrio? Comparativa de materiales de superfic
 pubDate: 2026-07-26
 tags: ["guía", "materiales", "equipamiento", "comparativa"]
 featured: false
-heroImage: "/images/posts/racket-materials.png"
+heroImage: "/images/posts/racket-materials.webp"
 ---
 
 Cada pala tiene dos materiales clave: el núcleo y la superficie. La superficie toca la bola. Dos materiales dominan: carbono y fibra de vidrio.

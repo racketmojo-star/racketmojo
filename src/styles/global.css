@@ -57,3 +57,149 @@ img{max-width:100%;height:auto;border-radius:8px}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
 
 ::selection{background:var(--color-orange);color:#fff}
+
+/* ─── Blog Post Prose (global — MDX <Content/> renders without scoped attrs) ─── */
+.prose {
+  max-width: 720px;
+  font-size: 1.08rem;
+  line-height: 1.78;
+  color: var(--color-text);
+}
+.prose h2 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--color-border-light);
+}
+.prose h3 {
+  margin-top: 2.25rem;
+  margin-bottom: 0.6rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+.prose p {
+  margin-bottom: 1.3rem;
+}
+.prose ul,
+.prose ol {
+  margin: 0.75rem 0 1.5rem 1.5rem;
+}
+.prose li {
+  margin-bottom: 0.55rem;
+  padding-left: 0.25rem;
+}
+.prose li::marker {
+  color: var(--color-orange);
+}
+.prose strong {
+  color: var(--color-orange-dark);
+  font-weight: 700;
+}
+.prose a {
+  color: var(--color-orange-dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+.prose a:hover {
+  color: var(--color-orange);
+}
+.prose blockquote {
+  margin: 2rem 0;
+  padding: 1.5rem 1.75rem;
+  background: linear-gradient(135deg, rgba(246,180,24,0.05), rgba(246,180,24,0.01));
+  border-left: 3px solid var(--color-orange);
+  border-radius: 0 12px 12px 0;
+  font-style: normal;
+  color: var(--color-text);
+}
+.prose blockquote strong {
+  color: var(--color-orange-dark);
+}
+.prose hr {
+  border: none;
+  border-top: 1px solid var(--color-border-light);
+  margin: 2.5rem 0;
+}
+
+/* ─── Tables ─── */
+.prose table {
+  width: 100%;
+  margin: 2rem 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+  font-size: 0.9rem;
+}
+.prose thead {
+  background: linear-gradient(135deg, var(--color-orange), var(--color-orange-dark));
+}
+.prose th {
+  text-align: left;
+  padding: 0.8rem 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  border: none;
+}
+.prose td {
+  text-align: left;
+  padding: 0.75rem 1.1rem;
+  border-bottom: 1px solid var(--color-border-light);
+  background: #fff;
+  transition: background 0.15s;
+}
+.prose tr:last-child td {
+  border-bottom: none;
+}
+.prose tr:nth-child(even) td {
+  background: #FAFBFC;
+}
+.prose tr:hover td {
+  background: rgba(246,180,24,0.04);
+}
+.prose td:first-child {
+  font-weight: 600;
+  color: var(--color-text);
+}
+[dir=rtl] .prose th,
+[dir=rtl] .prose td {
+  text-align: right;
+}
+
+/* ─── Prose Mobile ─── */
+@media (max-width: 600px) {
+  .prose {
+    font-size: 1rem;
+  }
+  .prose table {
+    font-size: 0.8rem;
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .prose th,
+  .prose td {
+    padding: 0.55rem 0.7rem;
+    white-space: nowrap;
+  }
+  .prose th {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .prose h2 {
+    font-size: 1.25rem;
+    margin-top: 2rem;
+  }
+}

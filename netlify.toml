@@ -1,25 +1,19 @@
-# Netlify configuration for RacketMojo
-# Astro outputs static to dist/
-
 [build]
   command = "npm run build"
   publish = "dist"
 
-[build.environment]
-  NODE_VERSION = "20"
-
-# i18n redirects
 [[redirects]]
   from = "/"
   to = "/en/"
   status = 301
 
-[[redirects]]
-  from = "/blog/*"
-  to = "/en/blog/:splat"
-  status = 301
+# ─── Asset caching ───
 
-# Headers for performance & security
+[[headers]]
+  for = "/_astro/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
 [[headers]]
   for = "/images/*"
   [headers.values]
@@ -30,9 +24,14 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+# ─── Sitemap freshness ───
+
 [[headers]]
-  for = "/*"
+  for = "/sitemap-index.xml"
   [headers.values]
-    X-Frame-Options = "DENY"
-    X-Content-Type-Options = "nosniff"
-    Referrer-Policy = "strict-origin-when-cross-origin"
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/sitemap-0.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

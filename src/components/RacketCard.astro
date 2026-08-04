@@ -27,10 +27,24 @@ const { name, brand, image, price, specs } = Astro.props;
     </div>
     <h3 class="rc-name">{name}</h3>
     <dl class="rc-specs">
-      <div><dt>Weight</dt><dd>{specs.weight}</dd></div>
-      <div><dt>Core</dt><dd>{specs.core}</dd></div>
-      <div><dt>Surface</dt><dd>{specs.surface}</dd></div>
+      <div class="rc-spec">
+        <dt>Weight</dt>
+        <dd>{specs.weight}</dd>
+      </div>
+      <div class="rc-spec">
+        <dt>Core</dt>
+        <dd>{specs.core}</dd>
+      </div>
+      <div class="rc-spec">
+        <dt>Surface</dt>
+        <dd>{specs.surface}</dd>
+      </div>
     </dl>
+    <div class="rc-cta">
+      <a href={`https://app.racketmojo.com`} class="rc-cta-link">
+        Check fit →
+      </a>
+    </div>
   </div>
 </div>
 
@@ -40,112 +54,153 @@ const { name, brand, image, price, specs } = Astro.props;
     flex-direction: column;
     background: #fff;
     border: 1px solid var(--color-border);
-    border-radius: 14px;
+    border-radius: 16px;
     overflow: hidden;
-    margin: 1.75rem 0;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
-    transition: box-shadow 0.2s;
+    margin: 2rem 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+    transition: box-shadow 0.25s, border-color 0.25s;
   }
-  .rc:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+  .rc:hover {
+    box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+    border-color: var(--color-orange);
+  }
 
-  /* Image side */
+  /* ─── Image ─── */
   .rc-img {
     position: relative;
-    background: #FAFBFC;
+    background: linear-gradient(180deg, #FAFBFC 0%, #F0F2F5 100%);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1.5rem;
-    min-height: 220px;
+    padding: 2rem 1.5rem;
+    min-height: 240px;
   }
   .rc-img img {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 220px;
+    max-height: 220px;
     object-fit: contain;
-    transition: transform 0.2s;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.08));
   }
-  .rc:hover .rc-img img { transform: scale(1.04); }
+  .rc:hover .rc-img img {
+    transform: scale(1.06);
+  }
   .rc-shape {
     position: absolute;
-    top: 0.75rem; left: 0.75rem;
+    top: 1rem;
+    left: 1rem;
     background: var(--color-orange);
     color: #fff;
-    padding: 0.2rem 0.6rem;
-    border-radius: 20px;
+    padding: 0.25rem 0.7rem;
+    border-radius: 100px;
     font-size: 0.65rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.6px;
+    box-shadow: 0 2px 8px rgba(246,180,24,0.35);
   }
 
-  /* Body side */
-  .rc-body { padding: 1.25rem 1.5rem 1.5rem; }
+  /* ─── Body ─── */
+  .rc-body {
+    padding: 1.5rem 1.75rem 1.75rem;
+  }
   .rc-head {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.4rem;
   }
   .rc-brand {
     font-size: 0.7rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.2px;
     color: var(--color-orange);
   }
   .rc-price {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     font-weight: 800;
     color: var(--color-text);
   }
   .rc-name {
-    font-size: 1.15rem;
-    margin-bottom: 0.75rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
     line-height: 1.25;
+    letter-spacing: -0.01em;
   }
 
-  /* Specs grid */
+  /* ─── Specs ─── */
   .rc-specs {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.5rem 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
   }
-  .rc-specs div { }
-  .rc-specs dt {
-    font-size: 0.65rem;
+  .rc-spec {
+    background: var(--color-surface);
+    border-radius: 10px;
+    padding: 0.6rem 0.7rem;
+    text-align: center;
+  }
+  .rc-spec dt {
+    font-size: 0.6rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.6px;
     color: var(--color-text-dim);
-    margin-bottom: 0.1rem;
+    margin-bottom: 0.2rem;
   }
-  .rc-specs dd {
-    font-size: 0.88rem;
-    font-weight: 600;
+  .rc-spec dd {
+    font-size: 0.85rem;
+    font-weight: 700;
     color: var(--color-text);
   }
 
-  /* Desktop: side-by-side */
-  @media(min-width: 600px) {
+  /* ─── CTA ─── */
+  .rc-cta {
+    text-align: right;
+  }
+  .rc-cta-link {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-orange-dark);
+    transition: color 0.15s;
+    padding: 0.3rem 0;
+  }
+  .rc-cta-link:hover {
+    color: var(--color-orange);
+  }
+
+  /* ─── Desktop side-by-side ─── */
+  @media (min-width: 640px) {
     .rc {
       flex-direction: row;
-      min-height: 260px;
+      min-height: 280px;
     }
     .rc-img {
-      width: 40%;
+      width: 38%;
       min-height: auto;
-      padding: 1rem;
+      padding: 1.5rem;
     }
     .rc-body {
-      width: 60%;
+      width: 62%;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
   }
 
-  /* RTL */
-  [dir=rtl] .rc-shape {
-    left: auto; right: 0.75rem;
+  /* ─── RTL ─── */
+  [dir="rtl"] .rc-shape {
+    left: auto;
+    right: 1rem;
+  }
+  [dir="rtl"] .rc-cta {
+    text-align: left;
+  }
+  [dir="rtl"] .rc-brand {
+    letter-spacing: 0;
   }
 </style>

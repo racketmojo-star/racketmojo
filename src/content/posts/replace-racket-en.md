@@ -4,7 +4,7 @@ description: "Is your racket dead? Learn the 5 clear signs that indicate you nee
 pubDate: 2026-07-26
 tags: ["guide", "maintenance", "equipment", "racket-care"]
 featured: false
-heroImage: "/images/posts/replace-racket.png"
+heroImage: "/images/posts/replace-racket.webp"
 ---
 
 Padel rackets don't last forever. Unlike tennis rackets that can survive years, padel rackets take a beating — every smash, every wall impact, every ball compresses the core a little more. Eventually, the performance drops, even if there's no visible damage.

@@ -5,34 +5,38 @@ import BlogPostLayout from '../../../layouts/BlogPostLayout.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts');
-
   const paths = [];
   for (const post of posts) {
-    // post.id = "first-racket-en.md" → slug="first-racket", lang="en"
     const match = post.id.match(/^(.+)-(\w{2})\.mdx?$/);
     if (match) {
       const [, slug, lang] = match;
       paths.push({ params: { lang, slug } });
     }
   }
-
   return paths;
 }
 
 const { lang, slug } = Astro.params;
 
-// Find the post matching this slug + locale
+// Find the current post
+const allPosts = await getCollection('posts');
 const postId = `${slug}-${lang}.md`;
 const postIdMdx = `${slug}-${lang}.mdx`;
-const post = (await getCollection('posts')).find(p => p.id === postId || p.id === postIdMdx);
+const post = allPosts.find(p => p.id === postId || p.id === postIdMdx);
 
 if (!post) {
   return Astro.redirect(`/${lang}/blog/`);
 }
 
+// Fetch related posts: same locale, exclude current, pick 3
+const localePosts = allPosts
+  .filter(p => (p.id.includes(`-${lang}.md`) || p.id.includes(`-${lang}.mdx`)) && !p.data.draft && p.id !== post.id)
+  .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime())
+  .slice(0, 3);
+
 const { Content } = await post.render();
 ---
 
-<BlogPostLayout post={post} lang={lang}>
+<BlogPostLayout post={post} lang={lang} relatedPosts={localePosts}>
   <Content />
 </BlogPostLayout>

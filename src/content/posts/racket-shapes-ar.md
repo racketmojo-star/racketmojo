@@ -4,7 +4,7 @@ description: "أشكال مضارب البادل مشروحة بمقارنات �
 pubDate: 2026-07-26
 tags: ["دليل", "أشكال", "معدات", "مقارنة"]
 featured: true
-heroImage: "/images/posts/racket-shapes.png"
+heroImage: "/images/posts/racket-shapes.webp"
 ---
 
 تأتي مضارب البادل بثلاثة أشكال. إذا تذكرت شيئًا واحدًا من هذا المقال: **الشكل يحدد أين يقع مركز القوة، ومركز القوة يحدد كل شيء.**

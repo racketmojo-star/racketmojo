@@ -4,7 +4,7 @@ description: "No necesitas gastar 300€ para tener una gran pala. Las mejores o
 pubDate: 2026-07-26
 tags: ["económico", "valor", "review-palas", "principiantes"]
 featured: false
-heroImage: "/images/posts/budget-rackets.png"
+heroImage: "/images/posts/budget-rackets.webp"
 ---
 
 Un secreto: **la diferencia entre una pala de 90€ y una de 250€ es principalmente marketing** — sobre todo a nivel principiante e intermedio.

@@ -4,7 +4,7 @@ description: "Todo lo que necesitas saber sobre formas, pesos, materiales y esti
 pubDate: 2026-07-26
 tags: ["principiantes", "guía", "equipamiento", "elección-de-pala"]
 featured: true
-heroImage: "/images/posts/first-racket.png"
+heroImage: "/images/posts/first-racket.webp"
 ---
 
 Elegir tu primera pala de pádel puede ser abrumador. Entra en cualquier tienda y encontrarás cientos de opciones — diferentes formas, pesos, materiales y marcas que afirman ser la mejor. Pero aquí está la verdad: **la mejor pala no es la más cara. Es la que se adapta a cómo juegas TÚ.**
